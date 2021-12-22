@@ -2,8 +2,8 @@ name: Build CSS
 on:
   push:
     branches:
-      # Run only on pushes to dev
-      - dev
+      # Run only on pushes to main
+      - main
 
 jobs:
   run:
