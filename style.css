@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Stackspin WP
+Theme Name: Twenty Twenty-One
 Theme URI: https://wordpress.org/themes/twentytwentyone/
 Author: the WordPress team
 Author URI: https://wordpress.org/
@@ -9,7 +9,7 @@ Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the
 Requires at least: 5.3
 Tested up to: 5.8
 Requires PHP: 5.6
-Version: 0.1
+Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentytwentyone
@@ -20,6 +20,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 */
 
 /**
+ * Minor tweak
  * SETTINGS
  * File-header..........The file header for the themes style.css file.
  * Fonts................Any font files, if the project needs specific fonts.
