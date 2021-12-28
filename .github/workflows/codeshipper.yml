@@ -1,4 +1,4 @@
-name: Build CSS
+name: Codeshipper
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  run:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
@@ -30,3 +30,21 @@ jobs:
         add: "style* assets/css"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  deploy:
+    needs: build
+      # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:      
+      - name: Deploy
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{secrets.SSH_HOST}}
+          key: ${{secrets.SSH_KEY}}
+          username: ${{secrets.SSH_USER}}
+         
+          script: | 
+            cd /var/www/stackspin.lvl73.it/wordpress/wp-content/themes/stackspin-theme
+            git pull
+            echo "Deployed"
