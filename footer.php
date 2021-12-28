@@ -7,8 +7,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @subpackage Stackspin
+ * @since Stackspin 1.0
  */
 
 ?>
@@ -21,7 +21,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
-			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
+			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'stackspin' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">
 					<?php
 					wp_nav_menu(
@@ -57,8 +57,8 @@
 				<?php
 				printf(
 					/* translators: %s: WordPress. */
-					esc_html__( 'Proudly powered by %s.', 'twentytwentyone' ),
-					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
+					esc_html__( 'Proudly powered by %s.', 'stackspin' ),
+					'<a href="' . esc_url( __( 'https://wordpress.org/', 'stackspin' ) ) . '">WordPress</a>'
 				);
 				?>
 			</div><!-- .powered-by -->

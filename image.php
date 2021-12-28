@@ -3,8 +3,8 @@
  * The template for displaying image attachments
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @subpackage Stackspin
+ * @since Stackspin 1.0
  */
 
 get_header();
@@ -28,7 +28,7 @@ while ( have_posts() ) {
 				 *
 				 * @param string $image_size Image size. Default 'full'.
 				 */
-				$image_size = apply_filters( 'twenty_twenty_one_attachment_size', 'full' );
+				$image_size = apply_filters( 'stackspin_attachment_size', 'full' );
 				echo wp_get_attachment_image( get_the_ID(), $image_size );
 				?>
 
@@ -42,10 +42,10 @@ while ( have_posts() ) {
 
 			wp_link_pages(
 				array(
-					'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
+					'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'stackspin' ) . '">',
 					'after'    => '</nav>',
 					/* translators: %: Page number. */
-					'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
+					'pagelink' => esc_html__( 'Page %', 'stackspin' ),
 				)
 			);
 			?>
@@ -58,7 +58,7 @@ while ( have_posts() ) {
 				echo '<span class="posted-on">';
 				printf(
 					/* translators: %s: Parent post. */
-					esc_html__( 'Published in %s', 'twentytwentyone' ),
+					esc_html__( 'Published in %s', 'stackspin' ),
 					'<a href="' . esc_url( get_the_permalink( wp_get_post_parent_id( $post ) ) ) . '">' . esc_html( get_the_title( wp_get_post_parent_id( $post ) ) ) . '</a>'
 				);
 				echo '</span>';
@@ -67,7 +67,7 @@ while ( have_posts() ) {
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post. Only visible to screen readers. */
-						esc_html__( 'Edit %s', 'twentytwentyone' ),
+						esc_html__( 'Edit %s', 'stackspin' ),
 						'<span class="screen-reader-text">' . get_the_title() . '</span>'
 					),
 					'<span class="edit-link">',
@@ -80,7 +80,7 @@ while ( have_posts() ) {
 			if ( $metadata ) {
 				printf(
 					'<span class="full-size-link"><span class="screen-reader-text">%1$s</span><a href="%2$s">%3$s &times; %4$s</a></span>',
-					esc_html_x( 'Full size', 'Used before full size attachment link.', 'twentytwentyone' ), // phpcs:ignore WordPress.Security.EscapeOutput
+					esc_html_x( 'Full size', 'Used before full size attachment link.', 'stackspin' ), // phpcs:ignore WordPress.Security.EscapeOutput
 					esc_url( wp_get_attachment_url() ),
 					absint( $metadata['width'] ),
 					absint( $metadata['height'] )
@@ -92,7 +92,7 @@ while ( have_posts() ) {
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post. Only visible to screen readers. */
-						esc_html__( 'Edit %s', 'twentytwentyone' ),
+						esc_html__( 'Edit %s', 'stackspin' ),
 						'<span class="screen-reader-text">' . get_the_title() . '</span>'
 					),
 					'<span class="edit-link">',

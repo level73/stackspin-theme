@@ -3,14 +3,14 @@
  * Custom Colors Class
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
+ * @subpackage stackspin
  * @since Twenty Twenty-One 1.0
  */
 
 /**
  * This class is in charge of color customization via the Customizer.
  */
-class Twenty_Twenty_One_Custom_Colors {
+class stackspin_Custom_Colors {
 
 	/**
 	 * Instantiate the object.

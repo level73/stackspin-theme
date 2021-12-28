@@ -3,17 +3,17 @@
  * Customizer settings for this theme.
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
+ * @subpackage stackspin
  * @since Twenty Twenty-One 1.0
  */
 
-if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
+if ( ! class_exists( 'stackspin_Customize' ) ) {
 	/**
 	 * Customizer Settings.
 	 *
 	 * @since Twenty Twenty-One 1.0
 	 */
-	class Twenty_Twenty_One_Customize {
+	class stackspin_Customize {
 
 		/**
 		 * Constructor. Instantiate the object.
@@ -72,7 +72,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 				array(
 					'type'    => 'checkbox',
 					'section' => 'title_tagline',
-					'label'   => esc_html__( 'Display Site Title & Tagline', 'twentytwentyone' ),
+					'label'   => esc_html__( 'Display Site Title & Tagline', 'stackspin' ),
 				)
 			);
 
@@ -82,7 +82,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 			$wp_customize->add_section(
 				'excerpt_settings',
 				array(
-					'title'    => esc_html__( 'Excerpt Settings', 'twentytwentyone' ),
+					'title'    => esc_html__( 'Excerpt Settings', 'stackspin' ),
 					'priority' => 120,
 				)
 			);
@@ -103,10 +103,10 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 				array(
 					'type'    => 'radio',
 					'section' => 'excerpt_settings',
-					'label'   => esc_html__( 'On Archive Pages, posts show:', 'twentytwentyone' ),
+					'label'   => esc_html__( 'On Archive Pages, posts show:', 'stackspin' ),
 					'choices' => array(
-						'excerpt' => esc_html__( 'Summary', 'twentytwentyone' ),
-						'full'    => esc_html__( 'Full text', 'twentytwentyone' ),
+						'excerpt' => esc_html__( 'Summary', 'stackspin' ),
+						'full'    => esc_html__( 'Full text', 'stackspin' ),
 					),
 				)
 			);
@@ -116,7 +116,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 			include_once get_theme_file_path( 'classes/class-twenty-twenty-one-customize-color-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 			// Register the custom control.
-			$wp_customize->register_control_type( 'Twenty_Twenty_One_Customize_Color_Control' );
+			$wp_customize->register_control_type( 'stackspin_Customize_Color_Control' );
 
 			// Get the palette from theme-supports.
 			$palette = get_theme_support( 'editor-color-palette' );
@@ -131,11 +131,11 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 
 			// Add the control. Overrides the default background-color control.
 			$wp_customize->add_control(
-				new Twenty_Twenty_One_Customize_Color_Control(
+				new stackspin_Customize_Color_Control(
 					$wp_customize,
 					'background_color',
 					array(
-						'label'   => esc_html_x( 'Background color', 'Customizer control', 'twentytwentyone' ),
+						'label'   => esc_html_x( 'Background color', 'Customizer control', 'stackspin' ),
 						'section' => 'colors',
 						'palette' => $colors,
 					)

@@ -1,9 +1,9 @@
 <?php
 /**
- * Customize API: Twenty_Twenty_One_Customize_Notice_Control class
+ * Customize API: stackspin_Customize_Notice_Control class
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
+ * @subpackage stackspin
  * @since Twenty Twenty-One 1.0
  */
 
@@ -14,7 +14,7 @@
  *
  * @see WP_Customize_Control
  */
-class Twenty_Twenty_One_Customize_Notice_Control extends WP_Customize_Control {
+class stackspin_Customize_Notice_Control extends WP_Customize_Control {
 	/**
 	 * The control type.
 	 *
@@ -36,9 +36,9 @@ class Twenty_Twenty_One_Customize_Notice_Control extends WP_Customize_Control {
 	public function render_content() {
 		?>
 		<div class="notice notice-warning">
-			<p><?php esc_html_e( 'To access the Dark Mode settings, select a light background color.', 'twentytwentyone' ); ?></p>
-			<p><a href="<?php echo esc_url( __( 'https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support', 'twentytwentyone' ) ); ?>">
-				<?php esc_html_e( 'Learn more about Dark Mode.', 'twentytwentyone' ); ?>
+			<p><?php esc_html_e( 'To access the Dark Mode settings, select a light background color.', 'stackspin' ); ?></p>
+			<p><a href="<?php echo esc_url( __( 'https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support', 'stackspin' ) ); ?>">
+				<?php esc_html_e( 'Learn more about Dark Mode.', 'stackspin' ); ?>
 			</a></p>
 		</div>
 		<?php

@@ -3,7 +3,7 @@
  * Customize API: WP_Customize_Color_Control class
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
+ * @subpackage stackspin
  * @since Twenty Twenty-One 1.0
  */
 
@@ -14,7 +14,7 @@
  *
  * @see WP_Customize_Control
  */
-class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Control {
+class stackspin_Customize_Color_Control extends WP_Customize_Color_Control {
 	/**
 	 * The control type.
 	 *
@@ -45,7 +45,7 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 
 		// Enqueue the script.
 		wp_enqueue_script(
-			'twentytwentyone-control-color',
+			'stackspin-control-color',
 			get_theme_file_uri( 'assets/js/palette-colorpicker.js' ),
 			array( 'customize-controls', 'jquery', 'customize-base', 'wp-color-picker' ),
 			wp_get_theme()->get( 'Version' ),
