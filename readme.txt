@@ -1,5 +1,5 @@
-=== Twenty Twenty-One ===
-Contributors: wordpressdotorg
+# Stackspin WP Theme
+Contributors: Level73 & Greenhost
 Requires at least: 5.3
 Tested up to: 5.8
 Requires PHP: 5.6
@@ -8,6 +8,8 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
+
+This theme has been built on the Twenty Twenty-One Wordpress Theme. 
 
 Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush.
 
@@ -27,34 +29,12 @@ Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business 
 Twenty Twenty-One uses LocalStorage to save the setting when Dark Mode support is turned on or off.
 LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.
 No data is saved in the database or transferred.
+The Stackspin variation did not change or amend this behaviour.
 
 == Changelog ==
 
-= 1.4 =
-* Released: July 20, 2021
-
-https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.4
-
-= 1.3 =
-* Released: April 14, 2021
-
-https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.3
-
-= 1.2 =
-* Released: March 9, 2021
-
-https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.2
-
-= 1.1 =
-* Released: December 22, 2020
-
-https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.1
-
 = 1.0 =
-* Released: December 8, 2020
-
-https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.0
-
+* Released: December 28, 2021
 == Copyright ==
 
 Twenty Twenty-One WordPress Theme, 2020-2021 WordPress.org
