@@ -45,6 +45,6 @@ jobs:
           username: ${{secrets.SSH_USER}}
          
           script: | 
-            cd /var/www/stackspin.lvl73.it/wordpress/wp-content/themes/stackspin-theme
+            cd ${{secrets.DESTINATION_DIR}}
             git pull
             echo "Deployed"
