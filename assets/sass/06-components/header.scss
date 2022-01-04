@@ -1,21 +1,19 @@
 // Site header
 .site-header {
-	@extend %responsive-alignwide-width;
+	// @extend %responsive-alignwide-width;
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	row-gap: var(--global--spacing-vertical); // Add space in case the menu wraps below the site branding.
+	min-height: 92px;
 
 	.wp-custom-logo & {
 		align-items: center;
 	}
 
 	@include media(mobile) {
-		padding-top: calc(var(--global--spacing-vertical) / 0.75); // 40px
-	}
-
-	@include media(desktop) {
-		padding-top: calc(2.4 * var(--global--spacing-vertical)); // 60px
+		// padding-top: calc(var(--global--spacing-vertical) / 0.75); // 40px
 	}
 }
 
@@ -88,7 +86,6 @@
 
 	.site-header > & {
 		width: 100%;
-		padding-bottom: calc(var(--global--spacing-vertical) * 1.5);
 		border-bottom: 1px solid;
 		text-align: center;
 	}
@@ -111,6 +108,24 @@
 			height: auto;
 			width: auto;
 		}
+	}
+}
+
+
+
+.site-button {
+	color: var(--button--color-text);
+	// width: var(--site-button--width);
+	height: var(--site-button--height);
+	background-color: var(--button--color-background);
+	border-radius: var(--site-button--border-radius);
+	border: none;
+	box-sizing: border-box;
+	padding: var(--site-button--padding-vertical) var(--site-button--padding-horizontal);
+
+	&:hover {
+		background-color: var(--button--color-background-active);
+		color: var(--global--color-turquoise-100);
 	}
 }
 

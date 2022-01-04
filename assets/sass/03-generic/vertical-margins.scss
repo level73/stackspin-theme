@@ -15,18 +15,13 @@
 .site-main,
 .widget-area,
 .site-footer {
-	padding-top: var(--global--spacing-vertical);
-	padding-bottom: var(--global--spacing-vertical);
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .site-header {
-	padding-top: calc(0.75 * var(--global--spacing-vertical));
-	padding-bottom: calc(2 * var(--global--spacing-vertical));
-
 	@include media(mobile) {
-		padding-bottom: calc(3 * var(--global--spacing-vertical));
+		// padding-bottom: calc(3 * var(--global--spacing-vertical));
 	}
 }
 
@@ -95,8 +90,8 @@
 .wp-block-template-part > *,
 .wp-block-post-template :where(li > *) { // using :where keeps specificity low.
 
-	margin-top: calc(0.666 * var(--global--spacing-vertical));
-	margin-bottom: calc(0.666 * var(--global--spacing-vertical));
+	// margin-top: calc(0.666 * var(--global--spacing-vertical));
+	// margin-bottom: calc(0.666 * var(--global--spacing-vertical));
 
 	@include media(mobile) {
 		margin-top: var(--global--spacing-vertical);
@@ -170,4 +165,20 @@
 	&.alignfull + .alignright {
 		margin-top: var(--global--spacing-vertical);
 	}
+}
+
+.block-margins {
+	margin: 116px auto !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-float {
+	float: none !important;
 }

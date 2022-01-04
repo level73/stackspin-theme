@@ -61,7 +61,18 @@ add_filter( 'post_class', 'stackspin_post_classes', 10, 3 );
  */
 function stackspin_pingback_header() {
 	if ( is_singular() && pings_open() ) {
-		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
+		// echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
+		echo 	'<nav>
+					<!-- wp:site-logo /--> 
+					<ul>
+						<li><link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '"></li>
+						<li>News</li>
+						<li>Why Stackstpin?</li>
+						<li>Documentation</li>
+					</ul>
+
+					<button>Get Stackspin</button>
+				</nav>';
 	}
 }
 add_action( 'wp_head', 'stackspin_pingback_header' );

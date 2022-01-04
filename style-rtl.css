@@ -96,13 +96,48 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
  */
 
 /* Categories 01 to 03 are the basics. */
+@font-face {
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 300;
+	src: url("../../fonts/SpaceGrotesk-Light.ttf");
+}
+@font-face {
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 500;
+	src: url("../../fonts/SpaceGrotesk-Medium.ttf");
+}
+@font-face {
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 700;
+	src: url("../../fonts/SpaceGrotesk-Bold.ttf");
+}
+@font-face {
+	font-family: Inter, sans-serif;
+	font-weight: 300;
+	src: url("../../fonts/Inter-Light.ttf");
+}
+@font-face {
+	font-family: Inter, sans-serif;
+	font-weight: 400;
+	src: url("../../fonts/Inter-Regular.ttf");
+}
+@font-face {
+	font-family: Inter, sans-serif;
+	font-weight: 500;
+	src: url("../../fonts/Inter-Medium.ttf");
+}
+@font-face {
+	font-family: Inter, sans-serif;
+	font-weight: 600;
+	src: url("../../fonts/Inter-SemiBold.ttf");
+}
 
 /* Variables */
 :root {
 
 	/* Font Family */
-	--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
-	--global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-primary: var("Space Grotesk", sans-serif);
+	--global--font-secondary: var(Inter, sans-serif);
 
 	/* Font Size */
 	--global--font-size-base: 1.25rem;
@@ -154,9 +189,15 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--definition-term--font-family: var(--global--font-primary);
 
 	/* Colors */
+	--global--color-turquoise-100: #d6fdff;
+	--global--color-turquoise-200: #b6f7fb;
+	--global--color-turquoise-300: #7ae5ea;
+	--global--color-turquoise-500: #39a9b1;
+	--global--color-turquoise-700: #157983;
+	--global--color-turquoise-900: #0f4f57;
 	--global--color-black: #000;
 	--global--color-dark-gray: #28303d;
-	--global--color-gray: #39414d;
+	--global--color-gray: #6b7280;
 	--global--color-light-gray: #f0f0f0;
 	--global--color-green: #d1e4dd;
 	--global--color-blue: #d1dfe4;
@@ -167,14 +208,14 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--global--color-white: #fff;
 	--global--color-white-50: rgba(255, 255, 255, 0.5);
 	--global--color-white-90: rgba(255, 255, 255, 0.9);
-	--global--color-primary: var(--global--color-dark-gray);
+	--global--color-primary: var(--global--color-gray);
 
 	/* Body text color, site title, footer text color. */
-	--global--color-secondary: var(--global--color-gray);
+	--global--color-secondary: var(--global--color-turquoise-700);
 
 	/* Headings */
-	--global--color-primary-hover: var(--global--color-primary);
-	--global--color-background: var(--global--color-green);
+	--global--color-primary-hover: var(--global--color-turquoise-500);
+	--global--color-background: var(--global--color-white);
 
 	/* Mint, default body background */
 	--global--color-border: var(--global--color-primary);
@@ -208,11 +249,11 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--cover--color-background: var(--global--color-black);
 
 	/* Buttons */
-	--button--color-text: var(--global--color-background);
-	--button--color-text-hover: var(--global--color-secondary);
-	--button--color-text-active: var(--global--color-secondary);
-	--button--color-background: var(--global--color-secondary);
-	--button--color-background-active: var(--global--color-background);
+	--button--color-text: var(--global--color-turquoise-900);
+	--button--color-text-hover: var(--global--color-turquoise-100);
+	--button--color-text-active: var(--global--color-turquoise-100);
+	--button--color-background: var(--global--color-turquoise-300);
+	--button--color-background-active: var(--global--color-turquoise-500);
 	--button--font-family: var(--global--font-primary);
 	--button--font-size: var(--global--font-size-base);
 	--button--font-weight: 500;
@@ -244,13 +285,13 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--branding--description--font-family: var(--global--font-secondary);
 	--branding--description--font-size: var(--global--font-size-sm);
 	--branding--description--font-family: var(--global--font-secondary);
-	--branding--logo--max-width: 300px;
-	--branding--logo--max-height: 100px;
+	--branding--logo--max-width: 150px;
+	--branding--logo--max-height: 36px;
 	--branding--logo--max-width-mobile: 96px;
 	--branding--logo--max-height-mobile: 96px;
 
 	/* Main navigation */
-	--primary-nav--font-family: var(--global--font-secondary);
+	--primary-nav--font-family: var(--global--font-primary);
 	--primary-nav--font-family-mobile: var(--global--font-primary);
 	--primary-nav--font-size: var(--global--font-size-md);
 	--primary-nav--font-size-sub-menu: var(--global--font-size-xs);
@@ -261,11 +302,18 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--primary-nav--font-style-sub-menu-mobile: normal;
 	--primary-nav--font-weight: normal;
 	--primary-nav--font-weight-button: 500;
-	--primary-nav--color-link: var(--global--color-primary);
-	--primary-nav--color-link-hover: var(--global--color-primary-hover);
+	--primary-nav--color-link: var(--global--font-primary);
+	--primary-nav--color-link-hover: var(--global--font-primary);
 	--primary-nav--color-text: var(--global--color-primary);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
 	--primary-nav--border-color: var(--global--color-primary);
+
+	/* Menu button */
+	--site-button--width: 150px;
+	--site-button--height: 42px;
+	--site-button--border-radius: 6px;
+	--site-button--padding-vertical: 0;
+	--site-button--padding-horizontal: 20px;
 
 	/* Pagination */
 	--pagination--color-text: var(--global--color-primary);
@@ -775,7 +823,6 @@ template {
 .comments-pagination,
 .post-navigation,
 .site-footer,
-.site-header,
 .alignwide,
 .wide-max-width {
 	max-width: var(--responsive--alignwide-width);
@@ -845,21 +892,8 @@ template {
 .site-main,
 .widget-area,
 .site-footer {
-	padding-top: var(--global--spacing-vertical);
-	padding-bottom: var(--global--spacing-vertical);
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.site-header {
-	padding-top: calc(0.75 * var(--global--spacing-vertical));
-	padding-bottom: calc(2 * var(--global--spacing-vertical));
-}
-@media only screen and (min-width: 482px) {
-
-	.site-header {
-		padding-bottom: calc(3 * var(--global--spacing-vertical));
-	}
 }
 
 /**
@@ -910,15 +944,6 @@ template {
  * Block & non-gutenberg content wrapper children
  * - Sets spacing-vertical margin logic
  */
-.site-main > article > *,
-.site-main > .not-found > *,
-.entry-content > *,
-[class*=inner-container] > *,
-.wp-block-template-part > *,
-.wp-block-post-template :where(li > *) {
-	margin-top: calc(0.666 * var(--global--spacing-vertical));
-	margin-bottom: calc(0.666 * var(--global--spacing-vertical));
-}
 @media only screen and (min-width: 482px) {
 
 	.site-main > article > *,
@@ -1018,6 +1043,22 @@ template {
 .entry-content > *.alignfull + .alignleft,
 .entry-content > *.alignfull + .alignright {
 	margin-top: var(--global--spacing-vertical);
+}
+
+.block-margins {
+	margin: 116px auto !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-float {
+	float: none !important;
 }
 
 /**
@@ -3771,24 +3812,14 @@ table.wp-calendar-table caption {
 .site-header {
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	row-gap: var(--global--spacing-vertical);
+	min-height: 92px;
 }
 
 .wp-custom-logo .site-header {
 	align-items: center;
-}
-@media only screen and (min-width: 482px) {
-
-	.site-header {
-		padding-top: calc(var(--global--spacing-vertical) / 0.75);
-	}
-}
-@media only screen and (min-width: 822px) {
-
-	.site-header {
-		padding-top: calc(2.4 * var(--global--spacing-vertical));
-	}
 }
 
 .site-branding {
@@ -3858,7 +3889,6 @@ table.wp-calendar-table caption {
 
 .site-header > .site-logo {
 	width: 100%;
-	padding-bottom: calc(var(--global--spacing-vertical) * 1.5);
 	border-bottom: 1px solid;
 	text-align: center;
 }
@@ -3880,6 +3910,21 @@ table.wp-calendar-table caption {
 		height: auto;
 		width: auto;
 	}
+}
+
+.site-button {
+	color: var(--button--color-text);
+	height: var(--site-button--height);
+	background-color: var(--button--color-background);
+	border-radius: var(--site-button--border-radius);
+	border: none;
+	box-sizing: border-box;
+	padding: var(--site-button--padding-vertical) var(--site-button--padding-horizontal);
+}
+
+.site-button:hover {
+	background-color: var(--button--color-background-active);
+	color: var(--global--color-turquoise-100);
 }
 
 @media only screen and (max-width: 481px) {
@@ -4737,7 +4782,6 @@ h1.page-title {
 
 	.primary-navigation {
 		position: relative;
-		margin-right: auto;
 	}
 
 	.primary-navigation > .primary-menu-container {
@@ -5940,4 +5984,59 @@ footer {
 
 .is-IE .post-thumbnail .wp-post-image {
 	min-width: auto;
+}
+
+.full-screen {
+	height: calc(100vh - 92px);
+}
+
+.full-screen > .wp-block-group__inner-container,
+.full-screen .wp-block-columns {
+	height: 100%;
+	margin: auto !important;
+}
+
+.centered {
+	width: inherit;
+}
+
+.features .features__feature {
+	background-color: var(--global--color-white);
+	min-height: 186px;
+	border-radius: 6px;
+}
+
+.features .features__feature .feature__image {
+	margin-bottom: 0;
+}
+
+.features .features__feature .feature__text {
+	font-family: var(--global--font-primary);
+	font-weight: 700;
+}
+
+.description-icon {
+	background-color: var(--global--color-turquoise-500);
+	width: 48px;
+	height: 48px;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+}
+
+.limit-width {
+	max-width: 700px !important;
+}
+
+.limit-width:not(p) {
+	max-width: 1440px !important;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.highlighted {
+	background-color: var(--global--color-turquoise-200);
+	padding: 5px;
 }
