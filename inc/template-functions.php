@@ -261,40 +261,40 @@ function stackspin_get_non_latin_css( $type = 'front-end' ) {
 			'ps'    => array( 'Tahoma', 'Arial', 'sans-serif' ),
 
 			// Chinese Simplified (China) - Noto Sans SC.
-			'zh-CN' => array( '\'PingFang SC\'', '\'Helvetica Neue\'', '\'Microsoft YaHei New\'', '\'STHeiti Light\'', 'sans-serif' ),
+			'zh-CN' => array( '\'PingFang SC\'', '\'Space Grotesk\'', '\'Microsoft YaHei New\'', '\'STHeiti Light\'', 'sans-serif' ),
 
 			// Chinese Traditional (Taiwan) - Noto Sans TC.
-			'zh-TW' => array( '\'PingFang TC\'', '\'Helvetica Neue\'', '\'Microsoft YaHei New\'', '\'STHeiti Light\'', 'sans-serif' ),
+			'zh-TW' => array( '\'PingFang TC\'', '\'Space Grotesk\'', '\'Microsoft YaHei New\'', '\'STHeiti Light\'', 'sans-serif' ),
 
 			// Chinese (Hong Kong) - Noto Sans HK.
-			'zh-HK' => array( '\'PingFang HK\'', '\'Helvetica Neue\'', '\'Microsoft YaHei New\'', '\'STHeiti Light\'', 'sans-serif' ),
+			'zh-HK' => array( '\'PingFang HK\'', '\'Space Grotesk\'', '\'Microsoft YaHei New\'', '\'STHeiti Light\'', 'sans-serif' ),
 
 			// Cyrillic.
-			'bel'   => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'bg-BG' => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'kk'    => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'mk-MK' => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'mn'    => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'ru-RU' => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'sah'   => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'sr-RS' => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'tt-RU' => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
-			'uk'    => array( '\'Helvetica Neue\'', 'Helvetica', '\'Segoe UI\'', 'Arial', 'sans-serif' ),
+			'bel'   => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'bg-BG' => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'kk'    => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'mk-MK' => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'mn'    => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'ru-RU' => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'sah'   => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'sr-RS' => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'tt-RU' => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
+			'uk'    => array( '\'Space Grotesk\'', '\'Inter\'', 'sans-serif' ),
 
 			// Devanagari.
-			'bn-BD' => array( 'Arial', 'sans-serif' ),
-			'hi-IN' => array( 'Arial', 'sans-serif' ),
-			'mr'    => array( 'Arial', 'sans-serif' ),
-			'ne-NP' => array( 'Arial', 'sans-serif' ),
+			'bn-BD' => array( 'Inter', 'sans-serif' ),
+			'hi-IN' => array( 'Inter', 'sans-serif' ),
+			'mr'    => array( 'Inter', 'sans-serif' ),
+			'ne-NP' => array( 'Inter', 'sans-serif' ),
 
 			// Greek.
-			'el'    => array( '\'Helvetica Neue\', Helvetica, Arial, sans-serif' ),
+			'el'    => array( '\'Space Grotesk, sans-serif' ),
 
 			// Gujarati.
-			'gu'    => array( 'Arial', 'sans-serif' ),
+			'gu'    => array( 'Inter', 'sans-serif' ),
 
 			// Hebrew.
-			'he-IL' => array( '\'Arial Hebrew\'', 'Arial', 'sans-serif' ),
+			'he-IL' => array( '\'Arial Hebrew\'', 'Inter', 'sans-serif' ),
 
 			// Japanese.
 			'ja'    => array( 'sans-serif' ),
@@ -303,7 +303,7 @@ function stackspin_get_non_latin_css( $type = 'front-end' ) {
 			'ko-KR' => array( '\'Apple SD Gothic Neo\'', '\'Malgun Gothic\'', '\'Nanum Gothic\'', 'Dotum', 'sans-serif' ),
 
 			// Thai.
-			'th'    => array( '\'Sukhumvit Set\'', '\'Helvetica Neue\'', 'Helvetica', 'Arial', 'sans-serif' ),
+			'th'    => array( '\'Sukhumvit Set\'', '\'Space Grotesk\'', 'Arial', 'sans-serif' ),
 
 			// Vietnamese.
 			'vi'    => array( '\'Libre Franklin\'', 'sans-serif' ),

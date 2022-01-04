@@ -4,39 +4,46 @@
  * These styles should be loaded by the Block Editor only
  */
 @font-face {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "Space Grotesk";
 	font-weight: 300;
-	src: url("../../fonts/SpaceGrotesk-Light.ttf");
+	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.eot");
+	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.woff") format("woff"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.ttf") format("truetype");
 }
 @font-face {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "Space Grotesk";
 	font-weight: 500;
-	src: url("../../fonts/SpaceGrotesk-Medium.ttf");
+	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.eot");
+	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.woff") format("woff"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.ttf") format("truetype");
 }
 @font-face {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "Space Grotesk";
 	font-weight: 700;
-	src: url("../../fonts/SpaceGrotesk-Bold.ttf");
+	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.eot");
+	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.woff") format("woff"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.ttf") format("truetype");
 }
 @font-face {
-	font-family: Inter, sans-serif;
+	font-family: Inter;
 	font-weight: 300;
-	src: url("../../fonts/Inter-Light.ttf");
+	src: url("./assets/fonts/SpaceGrotesk/inter-light.eot");
+	src: url("./assets/fonts/Inter/inter-light.woff") format("woff"), url("./assets/fonts/Inter/inter-light.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-light.ttf") format("truetype");
 }
 @font-face {
-	font-family: Inter, sans-serif;
+	font-family: Inter;
 	font-weight: 400;
-	src: url("../../fonts/Inter-Regular.ttf");
+	src: url("./assets/fonts/SpaceGrotesk/inter-regular.eot");
+	src: url("./assets/fonts/Inter/inter-regular.woff") format("woff"), url("./assets/fonts/Inter/inter-regular.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-regular.ttf") format("truetype");
 }
 @font-face {
-	font-family: Inter, sans-serif;
+	font-family: Inter;
 	font-weight: 500;
-	src: url("../../fonts/Inter-Medium.ttf");
+	src: url("./assets/fonts/SpaceGrotesk/inter-medium.eot");
+	src: url("./assets/fonts/Inter/inter-medium.woff") format("woff"), url("./assets/fonts/Inter/inter-medium.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-medium.ttf") format("truetype");
 }
 @font-face {
-	font-family: Inter, sans-serif;
+	font-family: Inter;
 	font-weight: 600;
-	src: url("../../fonts/Inter-SemiBold.ttf");
+	src: url("./assets/fonts/SpaceGrotesk/inter-semibold.eot");
+	src: url("./assets/fonts/Inter/inter-semibold.woff") format("woff"), url("./assets/fonts/Inter/inter-semibold.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-semibold.ttf") format("truetype");
 }
 
 /* Variables */
@@ -44,7 +51,7 @@
 
 	/* Font Family */
 	--global--font-primary: var("Space Grotesk", sans-serif);
-	--global--font-secondary: var(Inter, sans-serif);
+	--global--font-secondary: var("Inter", sans-serif);
 
 	/* Font Size */
 	--global--font-size-base: 1.25rem;
