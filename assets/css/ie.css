@@ -7940,31 +7940,14 @@ footer {
 	border-radius: 6px;
 	display: flex;
 	align-items: center;
-<<<<<<< Updated upstream
 }
 
-.limit-width {
-=======
-}
-
-<<<<<<< HEAD
 [class^=has-text].limit-width,
 p.limit-width {
 	max-width: 700px !important;
 }
 
 .limit-width {
-=======
-.limit-width {
->>>>>>> Stashed changes
-	max-width: 700px !important;
-}
-
-.limit-width:not(p) {
-<<<<<<< Updated upstream
-=======
->>>>>>> f91bc6ec7e9ad7f503389f093d2ffa8b1f501dbf
->>>>>>> Stashed changes
 	max-width: 1440px !important;
 }
 

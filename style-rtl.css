@@ -2888,31 +2888,6 @@ dd {
 	position: absolute;
 	top: 100%;
 	border: 1px solid var(--primary-nav--border-color);
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
-}
-
-.wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:before,
-.wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:after {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 0;
-	top: -10px;
-	right: var(--global--spacing-horizontal);
-	border-style: solid;
-	border-color: var(--primary-nav--border-color) transparent;
-	border-width: 0 7px 10px 7px;
-<<<<<<< Updated upstream
-}
-
-.wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:after {
-=======
-}
-
-=======
 }
 
 .wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:before,
@@ -2928,9 +2903,7 @@ dd {
 	border-width: 0 7px 10px 7px;
 }
 
->>>>>>> f91bc6ec7e9ad7f503389f093d2ffa8b1f501dbf
 .wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:after {
->>>>>>> Stashed changes
 	top: -9px;
 	border-color: var(--global--color-background) transparent;
 }
@@ -3167,11 +3140,6 @@ pre.wp-block-preformatted {
 	font-size: var(--quote--font-size-large);
 	font-style: var(--quote--font-style-large);
 	line-height: var(--quote--line-height-large);
-<<<<<<< Updated upstream
-}
-
-=======
-<<<<<<< HEAD
 }
 
 .wp-block-quote.is-large:before,
@@ -3186,26 +3154,6 @@ pre.wp-block-preformatted {
 	display: none;
 }
 
-=======
-}
-
->>>>>>> Stashed changes
-.wp-block-quote.is-large:before,
-.wp-block-quote.is-style-large:before {
-	font-size: var(--quote--font-size-large);
-	line-height: var(--quote--line-height-large);
-	right: calc(-1 * var(--global--spacing-horizontal));
-}
-
-.wp-block-quote.is-large.has-text-align-right:before,
-.wp-block-quote.is-style-large.has-text-align-right:before {
-	display: none;
-}
-
-<<<<<<< Updated upstream
-=======
->>>>>>> f91bc6ec7e9ad7f503389f093d2ffa8b1f501dbf
->>>>>>> Stashed changes
 .wp-block-quote.is-large.has-text-align-right p:before,
 .wp-block-quote.is-style-large.has-text-align-right p:before {
 	content: "”";
@@ -6083,23 +6031,12 @@ footer {
 	align-items: center;
 }
 
-<<<<<<< HEAD
 [class^=has-text].limit-width,
 p.limit-width {
 	max-width: 700px !important;
 }
 
 .limit-width {
-=======
-.limit-width {
-	max-width: 700px !important;
-}
-
-.limit-width:not(p) {
-<<<<<<< Updated upstream
-=======
->>>>>>> f91bc6ec7e9ad7f503389f093d2ffa8b1f501dbf
->>>>>>> Stashed changes
 	max-width: 1440px !important;
 }
 
