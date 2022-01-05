@@ -143,8 +143,8 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 :root {
 
 	/* Font Family */
-	--global--font-primary: var("Space Grotesk", sans-serif);
-	--global--font-secondary: var("Inter", sans-serif);
+	--global--font-primary: "Space Grotesk", sans-serif;
+	--global--font-secondary: "Inter", sans-serif;
 
 	/* Font Size */
 	--global--font-size-base: 1.25rem;

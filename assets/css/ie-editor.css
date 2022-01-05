@@ -184,7 +184,7 @@ blockquote > *:last-child {
 
 blockquote p {
 	letter-spacing: normal;
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 700;
@@ -451,7 +451,7 @@ a:hover {
 	border-radius: 0;
 	cursor: pointer;
 	font-weight: 500;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.5;
 	padding: 15px 30px;
@@ -953,7 +953,7 @@ a:hover {
 	border-radius: 0;
 	cursor: pointer;
 	font-weight: 500;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.5;
 	padding: 15px 30px;
@@ -1065,109 +1065,109 @@ a:hover {
 
 .wp-block-heading h1 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 h1 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .h1 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .wp-block-heading h2 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 h2 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .h2 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .wp-block-heading h3 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 h3 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .h3 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .wp-block-heading h4 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 h4 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .h4 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .wp-block-heading h5 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 h5 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .h5 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .wp-block-heading h6 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 h6 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
 .h6 {
 	clear: both;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 }
 
@@ -1572,7 +1572,7 @@ h6 {
 
 .wp-block-latest-posts > li > a {
 	display: inline-block;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 2rem;
 	font-weight: normal;
 	line-height: 1.3;
@@ -1603,14 +1603,14 @@ h6 {
 }
 
 .wp-block-latest-posts .wp-block-latest-posts__post-excerpt {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
 }
 
 .wp-block-latest-posts .wp-block-latest-posts__post-full-content {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
@@ -1737,13 +1737,13 @@ h6 {
 }
 
 ul {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	margin: 30px 0;
 	padding-left: 50px;
 }
 
 ol {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	margin: 30px 0;
 	padding-left: 50px;
 }
@@ -1768,7 +1768,7 @@ li > ol {
 }
 
 dt {
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: bold;
 }
 
@@ -1808,7 +1808,7 @@ dt {
 }
 
 .wp-block-navigation .wp-block-navigation-link .wp-block-navigation-link__label {
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 1.25rem;
 	font-weight: normal;
 }
@@ -1818,11 +1818,11 @@ dt {
 }
 
 .wp-block-navigation:not(.has-text-color) .wp-block-navigation-link > a:hover {
-	color: sans-serif;
+	color: "Space Grotesk", sans-serif;
 }
 
 .wp-block-navigation:not(.has-text-color) .wp-block-navigation-link > a:focus {
-	color: sans-serif;
+	color: "Space Grotesk", sans-serif;
 }
 
 .wp-block-navigation:not(.has-text-color) .wp-block-navigation-link__content {
@@ -1866,7 +1866,7 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-pullquote p {
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 2rem;
 	font-style: normal;
 	font-weight: 700;
@@ -1988,7 +1988,7 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-quote p {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 700;
@@ -2263,7 +2263,7 @@ pre.wp-block-preformatted {
 
 .wp-block-rss .wp-block-rss__item-title > a {
 	display: inline-block;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 2rem;
 	font-weight: normal;
 	line-height: 1.3;
@@ -2294,14 +2294,14 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-rss .wp-block-rss__item-excerpt {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
 }
 
 .wp-block-rss .wp-block-rss__item-full-content {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
@@ -2345,7 +2345,7 @@ pre.wp-block-preformatted {
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	border: 3px solid #157983;
 	border-radius: 0;
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	max-width: inherit;
@@ -2356,7 +2356,7 @@ pre.wp-block-preformatted {
 .wp-block-search .wp-block-search__input {
 	border: 3px solid #157983;
 	border-radius: 0;
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	max-width: inherit;
@@ -2385,7 +2385,7 @@ pre.wp-block-preformatted {
 	border-radius: 0;
 	cursor: pointer;
 	font-weight: 500;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.5;
 	padding: 15px 30px;
@@ -2645,11 +2645,11 @@ table tfoot,
 }
 
 table th {
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 }
 
 .wp-block-table th {
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 }
 
 table td {
@@ -2955,7 +2955,7 @@ pre.wp-block-verse {
 
 .wp-block.editor-post-title__block .editor-post-title__input {
 	color: #157983;
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 4rem;
 	font-weight: 300;
 	line-height: 1.1;
@@ -2968,7 +2968,7 @@ pre.wp-block-verse {
 }
 
 .wp-block.block-editor-default-block-appender > textarea {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.25rem;
 }
 
@@ -3069,7 +3069,7 @@ pre.wp-block-verse {
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-	font-family: sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-weight: normal;
 	line-height: 0.66;
 	text-transform: uppercase;
@@ -3108,14 +3108,14 @@ pre.wp-block-verse {
 }
 
 html {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	line-height: 1.7;
 }
 
 body {
 	color: #6b7280;
 	background-color: #fff;
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1.25rem;
 	font-weight: normal;
 	-moz-osx-font-smoothing: grayscale;
