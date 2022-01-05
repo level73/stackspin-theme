@@ -184,7 +184,7 @@ blockquote > *:last-child {
 
 blockquote p {
 	letter-spacing: normal;
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 700;
@@ -1603,14 +1603,14 @@ h6 {
 }
 
 .wp-block-latest-posts .wp-block-latest-posts__post-excerpt {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
 }
 
 .wp-block-latest-posts .wp-block-latest-posts__post-full-content {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
@@ -1737,13 +1737,13 @@ h6 {
 }
 
 ul {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	margin: 30px 0;
 	padding-left: 50px;
 }
 
 ol {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	margin: 30px 0;
 	padding-left: 50px;
 }
@@ -1988,7 +1988,7 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-quote p {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 700;
@@ -2294,14 +2294,14 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-rss .wp-block-rss__item-excerpt {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
 }
 
 .wp-block-rss .wp-block-rss__item-full-content {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	margin-top: 20px;
@@ -2345,7 +2345,7 @@ pre.wp-block-preformatted {
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	border: 3px solid #157983;
 	border-radius: 0;
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	max-width: inherit;
@@ -2356,7 +2356,7 @@ pre.wp-block-preformatted {
 .wp-block-search .wp-block-search__input {
 	border: 3px solid #157983;
 	border-radius: 0;
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.7;
 	max-width: inherit;
@@ -2968,7 +2968,7 @@ pre.wp-block-verse {
 }
 
 .wp-block.block-editor-default-block-appender > textarea {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.25rem;
 }
 
@@ -3108,14 +3108,14 @@ pre.wp-block-verse {
 }
 
 html {
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	line-height: 1.7;
 }
 
 body {
 	color: #6b7280;
 	background-color: #fff;
-	font-family: "Inter", sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.25rem;
 	font-weight: normal;
 	-moz-osx-font-smoothing: grayscale;
