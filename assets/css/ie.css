@@ -99,44 +99,44 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 @font-face {
 	font-family: "Space Grotesk";
 	font-weight: 300;
-	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.eot");
-	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.woff") format("woff"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-light.ttf") format("truetype");
+	src: url("assets/fonts/SpaceGrotesk/spacegrotesk-light.eot");
+	src: url("assets/fonts/SpaceGrotesk/spacegrotesk-light.woff") format("woff"), url("assets/fonts/SpaceGrotesk/spacegrotesk-light.woff2") format("woff2"), url("assets/fonts/SpaceGrotesk/spacegrotesk-light.ttf") format("truetype");
 }
 @font-face {
 	font-family: "Space Grotesk";
 	font-weight: 500;
-	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.eot");
-	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.woff") format("woff"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-medium.ttf") format("truetype");
+	src: url("assets/fonts/SpaceGrotesk/spacegrotesk-medium.eot");
+	src: url("assets/fonts/SpaceGrotesk/spacegrotesk-medium.woff") format("woff"), url("assets/fonts/SpaceGrotesk/spacegrotesk-medium.woff2") format("woff2"), url("assets/fonts/SpaceGrotesk/spacegrotesk-medium.ttf") format("truetype");
 }
 @font-face {
 	font-family: "Space Grotesk";
 	font-weight: 700;
-	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.eot");
-	src: url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.woff") format("woff"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/spacegrotesk-bold.ttf") format("truetype");
+	src: url("assets/fonts/SpaceGrotesk/spacegrotesk-bold.eot");
+	src: url("assets/fonts/SpaceGrotesk/spacegrotesk-bold.woff") format("woff"), url("assets/fonts/SpaceGrotesk/spacegrotesk-bold.woff2") format("woff2"), url("assets/fonts/SpaceGrotesk/spacegrotesk-bold.ttf") format("truetype");
 }
 @font-face {
 	font-family: Inter;
 	font-weight: 300;
-	src: url("./assets/fonts/SpaceGrotesk/inter-light.eot");
-	src: url("./assets/fonts/Inter/inter-light.woff") format("woff"), url("./assets/fonts/Inter/inter-light.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-light.ttf") format("truetype");
+	src: url("assets/fonts/SpaceGrotesk/inter-light.eot");
+	src: url("assets/fonts/Inter/inter-light.woff") format("woff"), url("assets/fonts/Inter/inter-light.woff2") format("woff2"), url("assets/fonts/SpaceGrotesk/inter-light.ttf") format("truetype");
 }
 @font-face {
 	font-family: Inter;
 	font-weight: 400;
-	src: url("./assets/fonts/SpaceGrotesk/inter-regular.eot");
-	src: url("./assets/fonts/Inter/inter-regular.woff") format("woff"), url("./assets/fonts/Inter/inter-regular.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-regular.ttf") format("truetype");
+	src: url("assets/fonts/SpaceGrotesk/inter-regular.eot");
+	src: url("assets/fonts/Inter/inter-regular.woff") format("woff"), url("assets/fonts/Inter/inter-regular.woff2") format("woff2"), url("assets/fonts/SpaceGrotesk/inter-regular.ttf") format("truetype");
 }
 @font-face {
 	font-family: Inter;
 	font-weight: 500;
-	src: url("./assets/fonts/SpaceGrotesk/inter-medium.eot");
-	src: url("./assets/fonts/Inter/inter-medium.woff") format("woff"), url("./assets/fonts/Inter/inter-medium.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-medium.ttf") format("truetype");
+	src: url("assets/fonts/SpaceGrotesk/inter-medium.eot");
+	src: url("assets/fonts/Inter/inter-medium.woff") format("woff"), url("assets/fonts/Inter/inter-medium.woff2") format("woff2"), url("assets/fonts/SpaceGrotesk/inter-medium.ttf") format("truetype");
 }
 @font-face {
 	font-family: Inter;
 	font-weight: 600;
-	src: url("./assets/fonts/SpaceGrotesk/inter-semibold.eot");
-	src: url("./assets/fonts/Inter/inter-semibold.woff") format("woff"), url("./assets/fonts/Inter/inter-semibold.woff2") format("woff2"), url("./assets/fonts/SpaceGrotesk/inter-semibold.ttf") format("truetype");
+	src: url("assets/fonts/SpaceGrotesk/inter-semibold.eot");
+	src: url("assets/fonts/Inter/inter-semibold.woff") format("woff"), url("assets/fonts/Inter/inter-semibold.woff2") format("woff2"), url("assets/fonts/SpaceGrotesk/inter-semibold.ttf") format("truetype");
 }
 
 /* Variables */
