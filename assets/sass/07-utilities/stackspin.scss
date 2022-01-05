@@ -39,11 +39,12 @@
     align-items: center;
 }
 
-.limit-width {
+[class^="has-text"].limit-width,
+p.limit-width {
 	max-width: 700px!important;
 }
 
-.limit-width:not(p)  {
+.limit-width  {
 	max-width: 1440px!important;
 }
 
