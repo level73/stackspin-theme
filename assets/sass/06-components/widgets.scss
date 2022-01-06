@@ -1,10 +1,10 @@
 .widget-area {
 	@extend %responsive-alignwide-width;
-	margin-top: calc(6 * var(--global--spacing-vertical));
-	padding-bottom: calc(var(--global--spacing-vertical) / 3);
 	color: var(--footer--color-text);
 	font-size: var(--footer--font-size);
 	font-family: var(--footer--font-family);
+	font-weight: 500;
+	width: 15%;
 
 	@include media(laptop) {
 		display: grid;
@@ -76,6 +76,7 @@
 }
 
 .widget {
+	margin: 0;
 
 	h1,
 	h2,
@@ -109,6 +110,18 @@
 
 	h6 {
 		font-size: var(--global--font-size-xs);
+	}
+
+	.menu-item {
+		line-height: unset;
+
+		&:not(:first-child) {
+			margin-top: 30px;
+		}
+		
+		& > a {
+			text-decoration: none;
+		}
 	}
 }
 

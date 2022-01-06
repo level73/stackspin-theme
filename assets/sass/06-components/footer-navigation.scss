@@ -1,8 +1,6 @@
 
 .footer-navigation {
-	margin-top: calc(2 * var(--global--spacing-vertical));
-	margin-bottom: var(--global--spacing-vertical);
-	color: var(--footer--color-text);
+	color: var(--global--color-gray);
 	font-size: var(--global--font-size-xs);
 	font-family: var(--footer--font-family);
 }

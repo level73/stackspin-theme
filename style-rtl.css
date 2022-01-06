@@ -192,7 +192,7 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--latest-posts--title-font-size: var(--heading--font-size-h3);
 	--latest-posts--description-font-family: var(--global--font-secondary);
 	--latest-posts--description-font-size: var(--global--font-size-sm);
-	--list--font-family: var(--global--font-secondary);
+	--list--font-family: var(--global--font-primary);
 	--definition-term--font-family: var(--global--font-primary);
 
 	/* Colors */
@@ -202,10 +202,11 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--global--color-turquoise-500: #39a9b1;
 	--global--color-turquoise-700: #157983;
 	--global--color-turquoise-900: #0f4f57;
+	--global--color-turquoise-darkest: #1f2937;
 	--global--color-black: #000;
 	--global--color-dark-gray: #28303d;
-	--global--color-gray: #6b7280;
-	--global--color-light-gray: #f0f0f0;
+	--global--color-gray: #9ca3af;
+	--global--color-light-gray: #d1d5db;
 	--global--color-green: #d1e4dd;
 	--global--color-blue: #d1dfe4;
 	--global--color-purple: #d1d1e4;
@@ -285,7 +286,7 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--branding--color-link: var(--global--color-primary);
 	--branding--color-link-hover: var(--global--color-secondary);
 	--branding--title--font-family: var(--global--font-primary);
-	--branding--title--font-size: var(--global--font-size-lg);
+	--branding--title--font-size: var(--global--font-size-sm);
 	--branding--title--font-size-mobile: var(--heading--font-size-h4);
 	--branding--title--font-weight: normal;
 	--branding--title--text-transform: uppercase;
@@ -331,9 +332,9 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
 	--pagination--font-weight-strong: 600;
 
 	/* Footer */
-	--footer--color-text: var(--global--color-primary);
-	--footer--color-link: var(--global--color-primary);
-	--footer--color-link-hover: var(--global--color-primary-hover);
+	--footer--color-text: var(--global--color-white);
+	--footer--color-link: var(--global--color-white);
+	--footer--color-link-hover: var(--global--color-turquoise-200);
 	--footer--font-family: var(--global--font-primary);
 	--footer--font-size: var(--global--font-size-sm);
 
@@ -2888,31 +2889,6 @@ dd {
 	position: absolute;
 	top: 100%;
 	border: 1px solid var(--primary-nav--border-color);
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
-}
-
-.wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:before,
-.wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:after {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 0;
-	top: -10px;
-	right: var(--global--spacing-horizontal);
-	border-style: solid;
-	border-color: var(--primary-nav--border-color) transparent;
-	border-width: 0 7px 10px 7px;
-<<<<<<< Updated upstream
-}
-
-.wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:after {
-=======
-}
-
-=======
 }
 
 .wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:before,
@@ -2928,9 +2904,7 @@ dd {
 	border-width: 0 7px 10px 7px;
 }
 
->>>>>>> f91bc6ec7e9ad7f503389f093d2ffa8b1f501dbf
 .wp-block-navigation > .wp-block-navigation__container > .has-child > .wp-block-navigation__container:after {
->>>>>>> Stashed changes
 	top: -9px;
 	border-color: var(--global--color-background) transparent;
 }
@@ -3167,11 +3141,6 @@ pre.wp-block-preformatted {
 	font-size: var(--quote--font-size-large);
 	font-style: var(--quote--font-style-large);
 	line-height: var(--quote--line-height-large);
-<<<<<<< Updated upstream
-}
-
-=======
-<<<<<<< HEAD
 }
 
 .wp-block-quote.is-large:before,
@@ -3186,26 +3155,6 @@ pre.wp-block-preformatted {
 	display: none;
 }
 
-=======
-}
-
->>>>>>> Stashed changes
-.wp-block-quote.is-large:before,
-.wp-block-quote.is-style-large:before {
-	font-size: var(--quote--font-size-large);
-	line-height: var(--quote--line-height-large);
-	right: calc(-1 * var(--global--spacing-horizontal));
-}
-
-.wp-block-quote.is-large.has-text-align-right:before,
-.wp-block-quote.is-style-large.has-text-align-right:before {
-	display: none;
-}
-
-<<<<<<< Updated upstream
-=======
->>>>>>> f91bc6ec7e9ad7f503389f093d2ffa8b1f501dbf
->>>>>>> Stashed changes
 .wp-block-quote.is-large.has-text-align-right p:before,
 .wp-block-quote.is-style-large.has-text-align-right p:before {
 	content: "”";
@@ -4053,6 +4002,8 @@ table.wp-calendar-table caption {
 .site-footer {
 	padding-top: 0;
 	padding-bottom: calc(1.7 * var(--global--spacing-vertical));
+	background-color: var(--global--color-turquoise-darkest);
+	max-width: none !important;
 }
 
 .no-widgets .site-footer {
@@ -4065,18 +4016,94 @@ table.wp-calendar-table caption {
 	}
 }
 
+.site-footer .site-footer__main {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	height: 180px;
+	margin: 60px auto;
+}
+
+.site-footer .site-footer__main .site-logo {
+	margin: 0;
+}
+
+.site-footer .site-footer__main .site-name {
+	font-size: var(--branding--title--font-size);
+	color: var(--global--color-white);
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.site-footer .site-footer__main .site-name .site-name__description {
+	font-family: var(--global--font-secondary);
+	width: 70%;
+	font-weight: 400;
+}
+
+.site-footer .site-footer__main .site-footer__form {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.site-footer .site-footer__main .site-footer__form .site-footer__form-header {
+	text-transform: uppercase;
+	font-size: var(--global--font-size-xs);
+	font-family: var(--global--font-secondary);
+	color: var(--global--color-gray);
+	font-weight: 600;
+}
+
+.site-footer .site-footer__main .site-footer__form .site-footer__form-desc {
+	font-size: var(--footer--font-size);
+	font-family: var(--global--font-secondary);
+	color: var(--global--color-light-gray);
+}
+
+.site-footer .site-footer__main .site-footer__form .site-footer__form-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-footer .site-footer__main .site-footer__form .site-footer__form-wrapper .site-footer__form-input {
+	width: 65%;
+	border: none;
+}
+
+.site-footer .site-footer__main .site-footer__form .site-footer__form-wrapper .site-footer__form-submit {
+	width: 30%;
+	background-color: var(--global--color-turquoise-300);
+	color: var(--global--color-turquoise-900);
+	border: none;
+}
+
+.site-footer .site-footer__main .site-footer__form .site-footer__form-wrapper .site-footer__form-submit:hover {
+	border: none;
+}
+
+.site-footer .site-footer__main .site-footer__form .site-footer__form-wrapper .site-footer__form-input,
+.site-footer .site-footer__main .site-footer__form .site-footer__form-wrapper .site-footer__form-submit {
+	font-size: var(--footer--font-size);
+	padding: 10px;
+	font-family: var(--global--font-secondary);
+	border-radius: 6px;
+}
+
 .site-footer > .site-info {
 	padding-top: var(--global--spacing-vertical);
 	color: var(--footer--color-text);
 	font-family: var(--footer--font-family);
 	font-size: var(--footer--font-size);
 	line-height: var(--global--line-height-body);
-	border-top: 3px solid var(--global--color-border);
-}
-
-.site-footer > .site-info .site-name {
-	text-transform: var(--branding--title--text-transform);
-	font-size: var(--branding--title--font-size);
+	border-top: 1px solid var(--global--color-border);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
 }
 
 .site-footer > .site-info .powered-by {
@@ -4119,6 +4146,13 @@ table.wp-calendar-table caption {
 
 .has-background-white .site-footer > .site-info a:focus {
 	color: var(--wp--style--color--link, var(--global--color-white));
+}
+
+.site-footer > .site-info .site-info__copyright {
+	font-family: var(--global--font-secondary);
+	font-size: var(--global--font-size-xs);
+	color: var(--global--color-gray);
+	font-weight: 400;
 }
 
 .singular .entry-header {
@@ -5176,9 +5210,7 @@ h1.page-title {
 }
 
 .footer-navigation {
-	margin-top: calc(2 * var(--global--spacing-vertical));
-	margin-bottom: var(--global--spacing-vertical);
-	color: var(--footer--color-text);
+	color: var(--global--color-gray);
 	font-size: var(--global--font-size-xs);
 	font-family: var(--footer--font-family);
 }
@@ -5493,11 +5525,11 @@ h1.page-title {
 }
 
 .widget-area {
-	margin-top: calc(6 * var(--global--spacing-vertical));
-	padding-bottom: calc(var(--global--spacing-vertical) / 3);
 	color: var(--footer--color-text);
 	font-size: var(--footer--font-size);
 	font-family: var(--footer--font-family);
+	font-weight: 500;
+	width: 15%;
 }
 @media only screen and (min-width: 652px) {
 
@@ -5571,6 +5603,10 @@ h1.page-title {
 	clear: both;
 }
 
+.widget {
+	margin: 0;
+}
+
 .widget h1,
 .widget h2,
 .widget h3,
@@ -5603,6 +5639,18 @@ h1.page-title {
 
 .widget h6 {
 	font-size: var(--global--font-size-xs);
+}
+
+.widget .menu-item {
+	line-height: unset;
+}
+
+.widget .menu-item:not(:first-child) {
+	margin-top: 30px;
+}
+
+.widget .menu-item > a {
+	text-decoration: none;
 }
 
 .search-form {
@@ -6083,23 +6131,12 @@ footer {
 	align-items: center;
 }
 
-<<<<<<< HEAD
 [class^=has-text].limit-width,
 p.limit-width {
 	max-width: 700px !important;
 }
 
 .limit-width {
-=======
-.limit-width {
-	max-width: 700px !important;
-}
-
-.limit-width:not(p) {
-<<<<<<< Updated upstream
-=======
->>>>>>> f91bc6ec7e9ad7f503389f093d2ffa8b1f501dbf
->>>>>>> Stashed changes
 	max-width: 1440px !important;
 }
 

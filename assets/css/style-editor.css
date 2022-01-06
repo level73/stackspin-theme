@@ -99,7 +99,7 @@
 	--latest-posts--title-font-size: var(--heading--font-size-h3);
 	--latest-posts--description-font-family: var(--global--font-secondary);
 	--latest-posts--description-font-size: var(--global--font-size-sm);
-	--list--font-family: var(--global--font-secondary);
+	--list--font-family: var(--global--font-primary);
 	--definition-term--font-family: var(--global--font-primary);
 
 	/* Colors */
@@ -109,10 +109,11 @@
 	--global--color-turquoise-500: #39a9b1;
 	--global--color-turquoise-700: #157983;
 	--global--color-turquoise-900: #0f4f57;
+	--global--color-turquoise-darkest: #1f2937;
 	--global--color-black: #000;
 	--global--color-dark-gray: #28303d;
-	--global--color-gray: #6b7280;
-	--global--color-light-gray: #f0f0f0;
+	--global--color-gray: #9ca3af;
+	--global--color-light-gray: #d1d5db;
 	--global--color-green: #d1e4dd;
 	--global--color-blue: #d1dfe4;
 	--global--color-purple: #d1d1e4;
@@ -192,7 +193,7 @@
 	--branding--color-link: var(--global--color-primary);
 	--branding--color-link-hover: var(--global--color-secondary);
 	--branding--title--font-family: var(--global--font-primary);
-	--branding--title--font-size: var(--global--font-size-lg);
+	--branding--title--font-size: var(--global--font-size-sm);
 	--branding--title--font-size-mobile: var(--heading--font-size-h4);
 	--branding--title--font-weight: normal;
 	--branding--title--text-transform: uppercase;
@@ -238,9 +239,9 @@
 	--pagination--font-weight-strong: 600;
 
 	/* Footer */
-	--footer--color-text: var(--global--color-primary);
-	--footer--color-link: var(--global--color-primary);
-	--footer--color-link-hover: var(--global--color-primary-hover);
+	--footer--color-text: var(--global--color-white);
+	--footer--color-link: var(--global--color-white);
+	--footer--color-link-hover: var(--global--color-turquoise-200);
 	--footer--font-family: var(--global--font-primary);
 	--footer--font-size: var(--global--font-size-sm);
 
