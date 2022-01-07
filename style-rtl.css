@@ -3142,6 +3142,7 @@ pre.wp-block-preformatted {
 	font-style: var(--quote--font-style-large);
 	line-height: var(--quote--line-height-large);
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 .wp-block-quote.is-large:before,
@@ -3154,6 +3155,10 @@ pre.wp-block-preformatted {
 =======
 }
 
+=======
+}
+
+>>>>>>> 6a5a707ebb976adb070a2d274172402ad8917219
 .wp-block-quote.is-large:before,
 .wp-block-quote.is-style-large:before {
 	font-size: var(--quote--font-size-large);
