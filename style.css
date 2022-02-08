@@ -96,7 +96,6 @@ Stackspin Wordpress is distributed under the terms of the GNU GPL.
  */
 
 /* Categories 01 to 03 are the basics. */
-@import "../../node_modules/animate.css/animate.min.css";
 @font-face {
 	font-family: "Space Grotesk";
 	font-weight: 300;
@@ -6861,5 +6860,3 @@ p.limit-width {
 		transform: scale(1);
 	}
 }
-
-/* External animaiton library */
