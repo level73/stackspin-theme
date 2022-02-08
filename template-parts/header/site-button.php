@@ -14,4 +14,4 @@
 
 ?>
 
-<button class="site-button has-text-color has-background">Get Stackspin</button>
+<button class="site-button has-text-color has-background" id="get-stackspin--button">Get Stackspin</button>

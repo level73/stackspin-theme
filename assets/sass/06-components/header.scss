@@ -7,6 +7,9 @@
 	flex-wrap: wrap;
 	row-gap: var(--global--spacing-vertical); // Add space in case the menu wraps below the site branding.
 	min-height: 92px;
+	box-sizing: border-box;
+    padding: 0 calc(2 * var(--global--spacing-horizontal));
+	width: 100%;
 
 	.wp-custom-logo & {
 		align-items: center;
@@ -17,10 +20,16 @@
 	}
 }
 
+.alternative-bg {
+	background-color: var(--global--color-turquoise-50);
+}
+
 // Site branding
 .site-branding {
 	color: var(--branding--color-text);
 	margin-right: 140px;
+	z-index: 500;
+	flex-grow: 1;
 
 	&:last-child {
 		margin-right: 0;
@@ -127,11 +136,18 @@
 		background-color: var(--button--color-background-active);
 		color: var(--global--color-turquoise-100);
 	}
+
+	@include media(mobile-only) {
+		width: 100%;
+	}
 }
 
 @include media(mobile-only) {
 
 	.site-header {
+		justify-content: flex-start;
+		padding: 0 calc(0.666 * var(--global--spacing-vertical));
+		position: relative;
 
 		&.has-logo {
 
@@ -140,14 +156,6 @@
 				&.has-menu {
 
 					.site-logo {
-						position: absolute;
-						padding-top: calc(0.5 * var(--global--spacing-vertical));
-						margin-top: 0;
-						top: var(--global--admin-bar--height);
-
-						.primary-navigation-open & {
-							display: none;
-						}
 
 						img {
 							max-height: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit)) + 1.7em);

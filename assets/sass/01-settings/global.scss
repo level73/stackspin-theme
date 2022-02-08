@@ -64,10 +64,12 @@ $baseline-unit: 10px;
 	--definition-term--font-family: var(--global--font-primary);
 
 	/* Colors */
+	--global--color-turquoise-50: #F2FFFF;
 	--global--color-turquoise-100: #D6FDFF;
 	--global--color-turquoise-200: #B6F7FB;
 	--global--color-turquoise-300: #7AE5EA;
 	--global--color-turquoise-500: #39A9B1;
+	--global--color-turquoise-600: #24929C;
 	--global--color-turquoise-700: #157983;
 	--global--color-turquoise-900: #0F4F57;
 	--global--color-turquoise-darkest: #1F2937;
@@ -85,8 +87,9 @@ $baseline-unit: 10px;
 	--global--color-white: #fff;
 	--global--color-white-50: rgba(255, 255, 255, 0.5); // Used for disabled buttons
 	--global--color-white-90: rgba(255, 255, 255, 0.9); // Used in form fields.
+	--global--color-black-10: rgba(0, 0, 0, 0.1);
 
-	--global--color-primary: var(--global--color-gray); /* Body text color, site title, footer text color. */
+	--global--color-primary: var(--global--color-turquoise-900); /* Body text color, site title, footer text color. */
 	--global--color-secondary: var(--global--color-turquoise-700); /* Headings */
 	--global--color-primary-hover: var(--global--color-turquoise-500);
 	--global--color-background: var(--global--color-white); /* Mint, default body background */
@@ -120,10 +123,10 @@ $baseline-unit: 10px;
 
 	/* Buttons */
 	// Colors
-	--button--color-text: var(--global--color-turquoise-900);
+	--button--color-text: var(--global--color-white);
 	--button--color-text-hover: var(--global--color-turquoise-100);
 	--button--color-text-active: var(--global--color-turquoise-100);
-	--button--color-background: var(--global--color-turquoise-300);
+	--button--color-background: var(--global--color-turquoise-600);
 	--button--color-background-active: var(--global--color-turquoise-500);
 	// Fonts
 	--button--font-family: var(--global--font-primary);
@@ -132,7 +135,7 @@ $baseline-unit: 10px;
 	--button--line-height: 1.5;
 	// Borders
 	--button--border-width: 3px;
-	--button--border-radius: 0;
+	--button--border-radius: 6px;
 	// Spacing
 	--button--padding-vertical: 15px;
 	--button--padding-horizontal: calc(2 * var(--button--padding-vertical));
@@ -162,7 +165,7 @@ $baseline-unit: 10px;
 
 	--branding--logo--max-width: 150px;
 	--branding--logo--max-height: 36px;
-	--branding--logo--max-width-mobile: 96px;
+	--branding--logo--max-width-mobile: 150px;
 	--branding--logo--max-height-mobile: 96px;
 
 	/* Main navigation */
@@ -177,16 +180,16 @@ $baseline-unit: 10px;
 	--primary-nav--font-style-sub-menu-mobile: normal;
 	--primary-nav--font-weight: normal;
 	--primary-nav--font-weight-button: 500;
-	--primary-nav--color-link: var(--global--font-primary);
-	--primary-nav--color-link-hover: var(--global--font-primary);
-	--primary-nav--color-text: var(--global--color-primary);
+	--primary-nav--color-link: var(--global--color-gray);
+	--primary-nav--color-link-hover: var(--global--color-turquoise-700);
+	--primary-nav--color-text: var(--global--color-gray);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
 	--primary-nav--border-color: var(--global--color-primary);
 
 	/* Menu button */
 	--site-button--width: 150px;
 	--site-button--height: 42px;
-	--site-button--border-radius: 6px;
+	--site-button--border-radius: var(--button--border-radius);
 	--site-button--padding-vertical: 0;
 	--site-button--padding-horizontal: 20px;
 
@@ -194,7 +197,7 @@ $baseline-unit: 10px;
 	--pagination--color-text: var(--global--color-primary);
 	--pagination--color-link-hover: var(--global--color-primary-hover);
 	--pagination--font-family: var(--global--font-secondary);
-	--pagination--font-size: var(--global--font-size-lg);
+	--pagination--font-size: var(--global--font-size-xs);
 	--pagination--font-weight: normal;
 	--pagination--font-weight-strong: 600;
 

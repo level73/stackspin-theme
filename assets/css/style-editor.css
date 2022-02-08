@@ -103,10 +103,12 @@
 	--definition-term--font-family: var(--global--font-primary);
 
 	/* Colors */
+	--global--color-turquoise-50: #f2ffff;
 	--global--color-turquoise-100: #d6fdff;
 	--global--color-turquoise-200: #b6f7fb;
 	--global--color-turquoise-300: #7ae5ea;
 	--global--color-turquoise-500: #39a9b1;
+	--global--color-turquoise-600: #24929c;
 	--global--color-turquoise-700: #157983;
 	--global--color-turquoise-900: #0f4f57;
 	--global--color-turquoise-darkest: #1f2937;
@@ -123,7 +125,8 @@
 	--global--color-white: #fff;
 	--global--color-white-50: rgba(255, 255, 255, 0.5);
 	--global--color-white-90: rgba(255, 255, 255, 0.9);
-	--global--color-primary: var(--global--color-gray);
+	--global--color-black-10: rgba(0, 0, 0, 0.1);
+	--global--color-primary: var(--global--color-turquoise-900);
 
 	/* Body text color, site title, footer text color. */
 	--global--color-secondary: var(--global--color-turquoise-700);
@@ -164,17 +167,17 @@
 	--cover--color-background: var(--global--color-black);
 
 	/* Buttons */
-	--button--color-text: var(--global--color-turquoise-900);
+	--button--color-text: var(--global--color-white);
 	--button--color-text-hover: var(--global--color-turquoise-100);
 	--button--color-text-active: var(--global--color-turquoise-100);
-	--button--color-background: var(--global--color-turquoise-300);
+	--button--color-background: var(--global--color-turquoise-600);
 	--button--color-background-active: var(--global--color-turquoise-500);
 	--button--font-family: var(--global--font-primary);
 	--button--font-size: var(--global--font-size-base);
 	--button--font-weight: 500;
 	--button--line-height: 1.5;
 	--button--border-width: 3px;
-	--button--border-radius: 0;
+	--button--border-radius: 6px;
 	--button--padding-vertical: 15px;
 	--button--padding-horizontal: calc(2 * var(--button--padding-vertical));
 
@@ -202,7 +205,7 @@
 	--branding--description--font-family: var(--global--font-secondary);
 	--branding--logo--max-width: 150px;
 	--branding--logo--max-height: 36px;
-	--branding--logo--max-width-mobile: 96px;
+	--branding--logo--max-width-mobile: 150px;
 	--branding--logo--max-height-mobile: 96px;
 
 	/* Main navigation */
@@ -217,16 +220,16 @@
 	--primary-nav--font-style-sub-menu-mobile: normal;
 	--primary-nav--font-weight: normal;
 	--primary-nav--font-weight-button: 500;
-	--primary-nav--color-link: var(--global--font-primary);
-	--primary-nav--color-link-hover: var(--global--font-primary);
-	--primary-nav--color-text: var(--global--color-primary);
+	--primary-nav--color-link: var(--global--color-gray);
+	--primary-nav--color-link-hover: var(--global--color-turquoise-700);
+	--primary-nav--color-text: var(--global--color-gray);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
 	--primary-nav--border-color: var(--global--color-primary);
 
 	/* Menu button */
 	--site-button--width: 150px;
 	--site-button--height: 42px;
-	--site-button--border-radius: 6px;
+	--site-button--border-radius: var(--button--border-radius);
 	--site-button--padding-vertical: 0;
 	--site-button--padding-horizontal: 20px;
 
@@ -234,7 +237,7 @@
 	--pagination--color-text: var(--global--color-primary);
 	--pagination--color-link-hover: var(--global--color-primary-hover);
 	--pagination--font-family: var(--global--font-secondary);
-	--pagination--font-size: var(--global--font-size-lg);
+	--pagination--font-size: var(--global--font-size-xs);
 	--pagination--font-weight: normal;
 	--pagination--font-weight-strong: 600;
 
@@ -336,8 +339,8 @@
 @media only screen and (min-width: 822px) {
 
 	:root {
-		--responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 610px);
-		--responsive--alignwide-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 1240px);
+		--responsive--aligndefault-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 610px);
+		--responsive--alignwide-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 1440px);
 	}
 }
 
@@ -556,8 +559,8 @@ a:hover {
 }
 
 .has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
-	background: rgba(0, 0, 0, 0.9);
-	color: var(--wp--style--color--link, var(--global--color-white));
+	background: none;
+	color: var(--wp--style--color--link, var(--global--color-turquoise-900));
 }
 
 .has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) .meta-nav {
@@ -870,6 +873,10 @@ a:hover {
 	background-color: unset;
 }
 
+.wp-block-columns {
+	overflow: hidden;
+}
+
 .wp-block-columns:not(.alignwide):not(.alignfull) {
 	clear: both;
 }
@@ -1012,6 +1019,7 @@ a:hover {
 .wp-block-group {
 	display: block;
 	clear: both;
+	overflow: hidden;
 	display: flow-root;
 }
 

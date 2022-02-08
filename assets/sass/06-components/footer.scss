@@ -11,7 +11,7 @@
 		margin-top: calc(6 * var(--global--spacing-vertical));
 	}
 
-	@include media(mobile-only) {
+	@include media(desktop-only) {
 
 		.no-widgets & {
 			margin-top: calc(3 * var(--global--spacing-vertical));
@@ -25,6 +25,13 @@
 		height: 180px;
 		margin: 60px auto;
 
+		@include media(desktop-only) {
+			flex-direction: column;
+			height: fit-content;
+			padding: 0 calc(0.666 * var(--global--spacing-vertical));
+			box-sizing: border-box;
+		}
+
 		.site-logo {
 			margin: 0;
 		}
@@ -36,11 +43,20 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+
+			@include media(desktop-only) {
+				width: 100%;
+			}
 			
 			.site-name__description {
 				font-family: var(--global--font-secondary);
 				width: 70%;
 				font-weight: 400;
+
+				@include media(desktop-only) {
+					margin-top: var(--global--spacing-vertical);
+					width: 100%;
+				}
 			}
 		}
 
@@ -50,18 +66,32 @@
 			flex-direction: column;
 			justify-content: space-between;
 
+			@include media(desktop-only) {
+				width: 100%;
+				margin-top: calc(2 * var(--global--spacing-vertical));
+			}
+
 			.site-footer__form-header {
 				text-transform: uppercase;
 				font-size: var(--global--font-size-xs);
 				font-family: var(--global--font-secondary);
 				color: var(--global--color-gray);
 				font-weight: 600;
+
+				@include media(desktop-only) {
+					font-size: var(--global--font-size-xs) !important;
+					margin-bottom: var(--global--spacing-vertical);
+				}
 			}
 
 			.site-footer__form-desc {
 				font-size: var(--footer--font-size);
 				font-family: var(--global--font-secondary);
 				color: var(--global--color-light-gray);
+
+				@include media(desktop-only) {
+					margin-bottom: var(--global--spacing-vertical);
+				}
 			}
 
 			.site-footer__form-wrapper {
@@ -88,7 +118,7 @@
 					font-size: var(--footer--font-size);
 					padding: 10px;
 					font-family: var(--global--font-secondary);
-					border-radius: 6px;
+					border-radius: var(--button--border-radius);
 				}
 			}
 		}
@@ -102,7 +132,7 @@
 	font-family: var(--footer--font-family);
 	font-size: var(--footer--font-size);
 	line-height: var(--global--line-height-body);
-	border-top: 1px solid var(--global--color-border);
+	border-top: 1px solid var(--global--color-light-gray);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -120,6 +150,12 @@
 			margin-top: initial;
 			margin-left: auto;
 		}
+	}
+
+	@include media(desktop-only) {
+		flex-direction: column-reverse;
+		width: calc(100% - 2 * 0.666 * var(--global--spacing-vertical));
+		margin: 0 auto;
 	}
 
 	a {

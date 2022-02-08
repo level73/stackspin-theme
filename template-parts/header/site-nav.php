@@ -13,10 +13,10 @@
 	<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'stackspin' ); ?>">
 		<div class="menu-button-container">
 			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
-				<span class="dropdown-icon open"><?php esc_html_e( 'Menu', 'stackspin' ); ?>
+				<span class="dropdown-icon open"><?php esc_html_e( '', 'stackspin' ); ?>
 					<?php echo stackspin_get_icon_svg( 'ui', 'menu' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 				</span>
-				<span class="dropdown-icon close"><?php esc_html_e( 'Close', 'stackspin' ); ?>
+				<span class="dropdown-icon close"><?php esc_html_e( '', 'stackspin' ); ?>
 					<?php echo stackspin_get_icon_svg( 'ui', 'close' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 				</span>
 			</button><!-- #primary-mobile-menu -->

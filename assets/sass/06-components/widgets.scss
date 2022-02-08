@@ -16,8 +16,9 @@
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	@include media(mobile-only) {
-		margin-top: calc(3 * var(--global--spacing-vertical));
+	@include media(desktop-only) {
+		width: 100%;
+		margin: calc(2 * var(--global--spacing-vertical)) 0 0 0;
 	}
 
 	ul {
@@ -35,6 +36,12 @@
 
 		.sub-menu-toggle {
 			display: none;
+		}
+
+		@include media(desktop-only) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
 	}
 
@@ -117,6 +124,10 @@
 
 		&:not(:first-child) {
 			margin-top: 30px;
+
+			@include media(desktop-only) {
+				margin: 0;
+			}
 		}
 		
 		& > a {

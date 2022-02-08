@@ -222,35 +222,43 @@ if ( ! function_exists( 'stackspin_the_posts_navigation' ) ) {
 	 *
 	 * @return void
 	 */
+	// function stackspin_the_posts_navigation() {
+	// 	the_posts_pagination(
+	// 		array(
+	// 			'before_page_number' => esc_html__( 'Page', 'stackspin' ) . ' ',
+	// 			'mid_size'           => 0,
+	// 			'prev_text'          => sprintf(
+	// 				'%s <span class="nav-prev-text">%s</span>',
+	// 				is_rtl() ? stackspin_get_icon_svg( 'ui', 'arrow_right' ) : stackspin_get_icon_svg( 'ui', 'arrow_left' ),
+	// 				wp_kses(
+	// 					__( 'Newer <span class="nav-short">posts</span>', 'stackspin' ),
+	// 					array(
+	// 						'span' => array(
+	// 							'class' => array(),
+	// 						),
+	// 					)
+	// 				)
+	// 			),
+	// 			'next_text'          => sprintf(
+	// 				'<span class="nav-next-text">%s</span> %s',
+	// 				wp_kses(
+	// 					__( 'Older <span class="nav-short">posts</span>', 'stackspin' ),
+	// 					array(
+	// 						'span' => array(
+	// 							'class' => array(),
+	// 						),
+	// 					)
+	// 				),
+	// 				is_rtl() ? stackspin_get_icon_svg( 'ui', 'arrow_left' ) : stackspin_get_icon_svg( 'ui', 'arrow_right' )
+	// 			),
+	// 		)
+	// 	);
+	// }
+
 	function stackspin_the_posts_navigation() {
 		the_posts_pagination(
 			array(
-				'before_page_number' => esc_html__( 'Page', 'stackspin' ) . ' ',
-				'mid_size'           => 0,
-				'prev_text'          => sprintf(
-					'%s <span class="nav-prev-text">%s</span>',
-					is_rtl() ? stackspin_get_icon_svg( 'ui', 'arrow_right' ) : stackspin_get_icon_svg( 'ui', 'arrow_left' ),
-					wp_kses(
-						__( 'Newer <span class="nav-short">posts</span>', 'stackspin' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					)
-				),
-				'next_text'          => sprintf(
-					'<span class="nav-next-text">%s</span> %s',
-					wp_kses(
-						__( 'Older <span class="nav-short">posts</span>', 'stackspin' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					is_rtl() ? stackspin_get_icon_svg( 'ui', 'arrow_left' ) : stackspin_get_icon_svg( 'ui', 'arrow_right' )
-				),
+				'mid_size'           => 6,
 			)
 		);
 	}

@@ -1,0 +1,80 @@
+// First screen animations
+
+#first-screen--animation {
+    #group-1, #group-2, #group-36,
+    #vector-39, #vector-40, #vector-41 {
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+    #group-1 {
+        animation: rotation 12s linear infinite;
+    }
+
+    #group-2 {
+        animation: rotation 8s linear reverse infinite;
+    }
+
+    #group-3 {
+        animation: slide 3s ease-in infinite;
+        animation-delay: .5s;
+    }
+
+    #vector-39, #vector-40, #vector-41 {
+        animation: appear 1.5s linear forwards;
+        transform: scale(0);
+    }
+
+    #vector-39 {
+        animation-delay: 3s;
+    }
+
+    #vector-40 {
+        animation-delay: 3.5s;
+    }
+
+    #vector-41 {
+        animation-delay: 4s;
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotateZ(360deg);
+        }
+        to {
+            transform: rotateZ(0deg);
+        }
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(-5px, -5px);
+        }
+        
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    @keyframes appear {
+        0% {
+            transform: scale(0);
+        }
+        70% {
+            transform: scale(1.5);
+        }
+        80% {
+            transform: scale(1);
+        }
+        90% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}

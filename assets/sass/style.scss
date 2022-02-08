@@ -122,3 +122,8 @@ $somevar: #CCC;
 @import "07-utilities/measure";
 @import "07-utilities/ie";
 @import "07-utilities/stackspin";
+@import "07-utilities/animations";
+
+
+/* External animaiton library */
+@import "../../node_modules/animate.css/animate.min.css";

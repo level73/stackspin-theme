@@ -4,6 +4,7 @@
 	// If we don't want to support IE11, then "display: flow-root" would suffice.
 	display: block;
 	clear: both;
+	overflow: hidden;
 
 	display: flow-root; // stylelint-disable-line declaration-block-no-duplicate-properties
 

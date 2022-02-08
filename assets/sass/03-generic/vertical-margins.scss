@@ -169,6 +169,11 @@
 
 .block-margins {
 	margin: 116px auto !important;
+
+	@include media(desktop-only) {
+		margin: 46px auto !important;
+		width: 90% !important;
+	}
 }
 
 .no-margin {

@@ -25,11 +25,6 @@
 
 	.nav-links {
 
-		> * {
-			min-width: 44px;
-			min-height: 44px;
-		}
-
 		.nav-next a,
 		.nav-previous a {
 			display: flex;
@@ -42,7 +37,7 @@
 
 		@include media(tablet) {
 			display: flex;
-			justify-content: center;
+			justify-content: flex-end;
 			flex-wrap: wrap;
 
 			.nav-next,
@@ -132,7 +127,6 @@
 .comments-pagination {
 
 	border-top: 3px solid var(--global--color-border);
-	padding-top: var(--global--spacing-vertical);
 	margin: var(--global--spacing-vertical) auto;
 
 	@include media(desktop) {
@@ -143,7 +137,7 @@
 
 	// Resets the top margin added to the .nav-links items below.
 	.nav-links {
-		margin-top: calc(-1 * var(--global--spacing-vertical));
+		padding: var(--global--spacing-vertical) 0;
 
 		a:hover {
 			color: var(--pagination--color-link-hover);
@@ -173,9 +167,12 @@
 		font-family: var(--pagination--font-family);
 		font-size: var(--pagination--font-size);
 		font-weight: var(--pagination--font-weight);
-		margin-top: var(--global--spacing-vertical);
-		margin-left: calc(0.66 * var(--global--spacing-unit));
-		margin-right: calc(0.66 * var(--global--spacing-unit));
+		padding: calc(0.22 * var(--global--spacing-unit)) calc(0.66 * var(--global--spacing-unit));
+		border: solid 1px var(--global--color-dark-gray);
+		box-sizing: border-box;
+		// margin-top: var(--global--spacing-vertical);
+		// margin-left: calc(0.66 * var(--global--spacing-unit));
+		// margin-right: calc(0.66 * var(--global--spacing-unit));
 
 		&.current {
 			text-decoration: underline;
@@ -195,10 +192,12 @@
 
 		&.next {
 			margin-left: auto;
+			display: none;
 		}
 
 		&.prev {
 			margin-right: auto;
+			display: none;
 		}
 	}
 
@@ -214,7 +213,7 @@
 
 			&.prev,
 			&.next {
-				display: inline-block;
+				// display: inline-block;
 				flex: 0 1 auto;
 			}
 		}

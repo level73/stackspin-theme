@@ -65,6 +65,10 @@
 			max-width: calc(var(--responsive--alignfull-width) + (2 * var(--global--spacing-vertical)));
 			width: calc(var(--responsive--alignfull-width) + (2 * var(--global--spacing-vertical)));
 			margin-left: calc(-1 * var(--global--spacing-vertical));
+
+			@include media(mobile-only) {
+				width: fit-content;
+			}
 		}
 	}
 }

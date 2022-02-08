@@ -12,6 +12,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php stackspin_post_thumbnail(); ?>
 	<header class="entry-header">
 		<?php if ( is_singular() ) : ?>
 			<?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
@@ -19,7 +20,6 @@
 			<?php the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<?php endif; ?>
 
-		<?php stackspin_post_thumbnail(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -41,6 +41,10 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer default-max-width">
-		<?php stackspin_entry_meta_footer(); ?>
+		<?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ) ?>
+		<div class="entry-footer__details">
+			<span class="post-author"> <?php the_author(); ?> </span>
+			<?php stackspin_entry_meta_footer(); ?>
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

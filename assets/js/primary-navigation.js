@@ -104,7 +104,8 @@ function stackspinExpandSubMenu( el ) { // jshint ignore:line
 	var navMenu = function( id ) {
 		var wrapper = document.body, // this is the element to which a CSS class is added when a mobile nav menu is open
 			mobileButton = document.getElementById( id + '-mobile-menu' ),
-			navMenuEl = document.getElementById( 'site-navigation' );
+			navMenuEl = document.getElementById( 'site-navigation' ),
+			stackspinButton = document.getElementById( 'get-stackspin--button' );;
 
 		// If there's no nav menu, none of this is necessary.
 		if ( ! navMenuEl ) {
@@ -118,6 +119,21 @@ function stackspinExpandSubMenu( el ) { // jshint ignore:line
 				stackspinToggleAriaExpanded( mobileButton );
 				mobileButton.focus();
 			};
+		}
+
+		/**
+		* Change "Get Stackspin" button location according to window size 
+		*/
+		moveButton();
+		window.onresize = moveButton;
+
+		function moveButton() {
+			if ( window.getComputedStyle(mobileButton.parentElement).display === 'flex' ) {
+				document.getElementById( id + '-menu-list' ).appendChild(stackspinButton);
+			}
+			else {
+				document.getElementById( 'masthead' ).appendChild(stackspinButton);
+			}
 		}
 
 		/**
