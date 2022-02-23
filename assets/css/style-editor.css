@@ -62,7 +62,7 @@
 	--global--font-size-xl: 2.25rem;
 	--global--font-size-xxl: 4rem;
 	--global--font-size-xxxl: 5rem;
-	--global--font-size-page-title: var(--global--font-size-xxl);
+	--global--font-size-page-title: var(--global--font-size-xl);
 	--global--letter-spacing: normal;
 
 	/* Line Height */
@@ -71,7 +71,7 @@
 	--global--line-height-page-title: 1.1;
 
 	/* Headings */
-	--heading--font-family: var(--global--font-primary);
+	--heading--font-family: var(--global--font-secondary);
 	--heading--font-size-h6: var(--global--font-size-xs);
 	--heading--font-size-h5: var(--global--font-size-sm);
 	--heading--font-size-h4: var(--global--font-size-lg);
@@ -91,7 +91,7 @@
 	--heading--line-height-h2: var(--global--line-height-heading);
 	--heading--line-height-h1: var(--global--line-height-page-title);
 	--heading--font-weight: normal;
-	--heading--font-weight-page-title: 300;
+	--heading--font-weight-page-title: 800;
 	--heading--font-weight-strong: 600;
 
 	/* Block: Latest posts */
@@ -156,9 +156,9 @@
 	--form--color-text: var(--global--color-dark-gray);
 	--form--color-ranged: var(--global--color-secondary);
 	--form--label-weight: 500;
-	--form--border-color: var(--global--color-secondary);
-	--form--border-width: 3px;
-	--form--border-radius: 0;
+	--form--border-color: var(--global--color-gray);
+	--form--border-width: 1px;
+	--form--border-radius: 6px;
 	--form--spacing-unit: calc(0.5 * var(--global--spacing-unit));
 
 	/* Cover block */
@@ -173,7 +173,7 @@
 	--button--color-background: var(--global--color-turquoise-600);
 	--button--color-background-active: var(--global--color-turquoise-500);
 	--button--font-family: var(--global--font-primary);
-	--button--font-size: var(--global--font-size-base);
+	--button--font-size: var(--global--font-size-xs);
 	--button--font-weight: 500;
 	--button--line-height: 1.5;
 	--button--border-width: 3px;

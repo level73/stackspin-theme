@@ -640,3 +640,38 @@ function stackspin_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'stackspin_add_ie_class' );
+
+function custom_search_form( $form ) {
+	$form = '<form role="search" method="get" class="search-form" action="' . home_url( '/' ) . '" >
+	  <div class="custom-form">
+	  <input type="text" value="' . get_search_query() . '" class="search-form__input" placeholder="Search article" />
+	  <input type="submit" class="search-form__submit" value="'. esc_attr__( 'Search' ) .'" />
+	</div>
+	</form>';
+
+	return $form;
+  }
+  add_filter( 'get_search_form', 'custom_search_form', 40 );
+
+function posts_per_page() {
+	global $wp_query;
+	$page = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+	$ppp = get_query_var('posts_per_page');
+	$end = $ppp * $page;
+	$start = $end - $ppp + 1;
+	$total = $wp_query->found_posts;
+	return "Showing $start to $end of $total results";
+}
+
+function wpdocs_pagination_output( $template, $class ) {
+     
+    $template = '
+	<nav class="navigation %1$s" aria-label="%4$s">
+		<h2 class="screen-reader-text">%2$s</h2>
+		<label class="nav-ppp">' . posts_per_page() . '</label>
+		<div class="nav-links">%3$s</div>
+	</nav>';
+ 
+    return $template;
+}
+add_filter( 'navigation_markup_template', 'wpdocs_pagination_output', 99, 2 );

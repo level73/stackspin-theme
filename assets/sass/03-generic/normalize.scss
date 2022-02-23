@@ -22,6 +22,11 @@ html {
 
 body {
 	margin: 0;
+
+	.site {
+		max-width: 100vw;
+		overflow-x: hidden;
+	}
 }
 
 /**

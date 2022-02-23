@@ -149,11 +149,6 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 	@extend %responsive-aligndefault-width;
 	text-align: center;
 
-	.entry-header &,
-	.singular & {
-		@extend %responsive-alignwide-width-nested;
-	}
-
 	.wp-post-image {
 		display: block;
 		width: auto;

@@ -11,7 +11,7 @@
 
 ?>
 
-<div class="wp-block-columns alignfull are-vertically-aligned-center limit-width">
+<div class="wp-block-columns alignfull are-vertically-aligned-center limit-width home-subheader">
     <div class="wp-block-column is-vertically-aligned-center">
         <h2 class="no-padding">From the blog</h2>
     </div>

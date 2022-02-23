@@ -3,6 +3,9 @@
 // All navigation
 .navigation {
 	color: var(--global--color-primary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 	a {
 		color: var(--global--color-primary);
@@ -21,6 +24,13 @@
 		&:active {
 			color: var(--global--color-primary);
 		}
+	}
+
+	.nav-ppp {
+		font-family: var(--global--font-secondary);
+		font-weight: 500;
+		color: var(--global--color-dark-gray);
+		font-size: var(--global--font-size-xs);
 	}
 
 	.nav-links {
@@ -162,59 +172,67 @@
 		}
 	}
 
-	.nav-links > * {
-		color: var(--pagination--color-text);
-		font-family: var(--pagination--font-family);
-		font-size: var(--pagination--font-size);
-		font-weight: var(--pagination--font-weight);
-		padding: calc(0.22 * var(--global--spacing-unit)) calc(0.66 * var(--global--spacing-unit));
-		border: solid 1px var(--global--color-dark-gray);
-		box-sizing: border-box;
-		// margin-top: var(--global--spacing-vertical);
-		// margin-left: calc(0.66 * var(--global--spacing-unit));
-		// margin-right: calc(0.66 * var(--global--spacing-unit));
-
-		&.current {
-			text-decoration: underline;
-		}
-
-		&:not(.dots):not(.current):hover {
-			text-decoration-style: dotted;
-		}
-
-		&:first-child {
-			margin-left: 0;
-		}
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		&.next {
-			margin-left: auto;
-			display: none;
-		}
-
-		&.prev {
-			margin-right: auto;
+	.nav-ppp {
+		@include media(desktop-only) {
 			display: none;
 		}
 	}
 
-	@include media(desktop-only) {
-
-		.nav-links {
+	.nav-links {
+		@include media(desktop-only) {
 			display: flex;
 			flex-wrap: wrap;
+			width: 100%;
+	
+			.page-numbers {
+				display: none;
+	
+				&.prev,
+				&.next {
+					flex: 0 1 auto;
+					border-radius: var(--button--border-radius);
+				}
+			}
 		}
 
-		.page-numbers {
-			display: none;
+		& > * {
+			color: var(--pagination--color-text);
+			font-family: var(--pagination--font-family);
+			font-size: var(--pagination--font-size);
+			font-weight: var(--pagination--font-weight);
+			padding: calc(0.22 * var(--global--spacing-unit)) calc(0.66 * var(--global--spacing-unit));
+			border: solid 1px var(--global--color-dark-gray);
+			box-sizing: border-box;
+			// margin-top: var(--global--spacing-vertical);
+			// margin-left: calc(0.66 * var(--global--spacing-unit));
+			// margin-right: calc(0.66 * var(--global--spacing-unit));
 
-			&.prev,
+			&.current {
+				text-decoration: underline;
+			}
+
+			&:not(.dots):not(.current):hover {
+				text-decoration-style: dotted;
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
 			&.next {
-				// display: inline-block;
-				flex: 0 1 auto;
+				margin-left: auto;
+				float: right;
+				display: block;
+			}
+
+			&.prev {
+				margin-right: auto;
+				float: left;
+				display: block;
 			}
 		}
 	}

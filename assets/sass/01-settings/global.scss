@@ -18,7 +18,7 @@ $baseline-unit: 10px;
 	--global--font-size-xl: 2.25rem; // 36px / 16px
 	--global--font-size-xxl: 4rem; // 64px / 16px
 	--global--font-size-xxxl: 5rem; // 80px / 16px
-	--global--font-size-page-title: var(--global--font-size-xxl);
+	--global--font-size-page-title: var(--global--font-size-xl);
 	--global--letter-spacing: normal;
 
 	/* Line Height */
@@ -27,7 +27,7 @@ $baseline-unit: 10px;
 	--global--line-height-page-title: 1.1;
 
 	/* Headings */
-	--heading--font-family: var(--global--font-primary);
+	--heading--font-family: var(--global--font-secondary);
 
 	--heading--font-size-h6: var(--global--font-size-xs);
 	--heading--font-size-h5: var(--global--font-size-sm);
@@ -51,7 +51,7 @@ $baseline-unit: 10px;
 	--heading--line-height-h1: var(--global--line-height-page-title);
 
 	--heading--font-weight: normal;
-	--heading--font-weight-page-title: 300;
+	--heading--font-weight-page-title: 800;
 	--heading--font-weight-strong: 600;
 
 	/* Block: Latest posts */
@@ -111,9 +111,9 @@ $baseline-unit: 10px;
 	--form--color-text: var(--global--color-dark-gray); // Text color in input fields is always dark over light background.
 	--form--color-ranged: var(--global--color-secondary);
 	--form--label-weight: 500;
-	--form--border-color: var(--global--color-secondary);
-	--form--border-width: 3px;
-	--form--border-radius: 0;
+	--form--border-color: var(--global--color-gray);
+	--form--border-width: 1px;
+	--form--border-radius: 6px;
 	--form--spacing-unit: calc(0.5 * var(--global--spacing-unit));
 
 	/* Cover block */
@@ -130,7 +130,7 @@ $baseline-unit: 10px;
 	--button--color-background-active: var(--global--color-turquoise-500);
 	// Fonts
 	--button--font-family: var(--global--font-primary);
-	--button--font-size: var(--global--font-size-base);
+	--button--font-size: var(--global--font-size-xs);
 	--button--font-weight: 500;
 	--button--line-height: 1.5;
 	// Borders

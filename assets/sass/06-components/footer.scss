@@ -109,6 +109,10 @@
 					color: var(--global--color-turquoise-900);
 					border: none;
 
+					@include media(desktop-only) {
+						width: auto;
+					}
+
 					&:hover {
 						border: none;
 					}

@@ -13,12 +13,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php stackspin_post_thumbnail(); ?>
+	<?php if ( !is_singular() ) : ?>
 	<header class="entry-header">
-		<?php if ( is_singular() ) : ?>
-			<?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
-		<?php else : ?>
 			<?php the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-		<?php endif; ?>
+	<?php endif; ?>
 
 	</header><!-- .entry-header -->
 
@@ -40,6 +38,7 @@
 		?>
 	</div><!-- .entry-content -->
 
+	<?php if (is_home()) : ?>
 	<footer class="entry-footer default-max-width">
 		<?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ) ?>
 		<div class="entry-footer__details">
@@ -47,4 +46,5 @@
 			<?php stackspin_entry_meta_footer(); ?>
 		</div>
 	</footer><!-- .entry-footer -->
+	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

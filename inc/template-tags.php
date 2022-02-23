@@ -258,7 +258,7 @@ if ( ! function_exists( 'stackspin_the_posts_navigation' ) ) {
 	function stackspin_the_posts_navigation() {
 		the_posts_pagination(
 			array(
-				'mid_size'           => 6,
+				'mid_size'  => 6,
 			)
 		);
 	}
