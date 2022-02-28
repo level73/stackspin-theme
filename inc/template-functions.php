@@ -186,6 +186,15 @@ if ( ! function_exists( 'stackspin_post_title' ) ) {
 add_filter( 'the_title', 'stackspin_post_title' );
 
 /**
+ * Creates a post excerpt.
+ *
+ * @since Twenty Twenty-One 1.0
+ */
+function stackspin_get_excerpt() {
+	echo wp_trim_words( get_the_content(), $num_words = 55, $more = null );
+}
+
+/**
  * Gets the SVG code for a given icon.
  *
  * @since Twenty Twenty-One 1.0

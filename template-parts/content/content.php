@@ -22,9 +22,7 @@
 
 	<div class="entry-content">
 		<?php
-		the_content(
-			stackspin_continue_reading_text()
-		);
+		stackspin_get_excerpt();
 
 		wp_link_pages(
 			array(
