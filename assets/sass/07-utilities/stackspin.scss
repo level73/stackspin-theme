@@ -259,6 +259,8 @@ p.limit-width {
 }
 
 .benefits {
+	margin: 0 auto !important;
+
 	@include media(desktop-only) {
 		padding: 0 !important;
 	}

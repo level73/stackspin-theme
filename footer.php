@@ -22,9 +22,7 @@
 				<?php if ( has_custom_logo() ) : ?>
 					<div class="site-logo"><?php the_custom_logo(); ?></div>
 					<?php if ( get_bloginfo( 'description' ) ) : ?>
-						<?php if ( is_front_page() && ! is_paged() ) : ?>
-							<p class="site-name__description"><?php bloginfo( 'description' ); ?></p>
-						<?php endif; ?>
+						<p class="site-name__description"><?php bloginfo( 'description' ); ?></p>
 					<?php endif; ?>
 				<?php endif; ?>
 			</div><!-- .site-name -->
