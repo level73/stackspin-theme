@@ -123,14 +123,21 @@
 
 
 .site-button {
-	color: var(--button--color-text);
-	// width: var(--site-button--width);
+	color: var(--button--color-text) !important;
 	height: var(--site-button--height);
 	background-color: var(--button--color-background);
 	border-radius: var(--site-button--border-radius);
 	border: none;
 	box-sizing: border-box;
 	padding: var(--site-button--padding-vertical) var(--site-button--padding-horizontal);
+	text-align: center;
+	text-decoration: none;
+	font-size: var(--primary-nav--font-size);
+	line-height: calc(var(--primary-nav--font-size) * 2);
+
+	@include media(desktop-only) {
+		line-height: calc(var(--primary-nav--font-size) / 1.5);
+	}
 
 	&:hover {
 		background-color: var(--button--color-background-active);
