@@ -539,10 +539,10 @@ p.limit-width {
 				height: auto;
 			}
 
-			& > *:not(:first-child) {
+			& > *:not(.post-thumbnail) {
 				margin: 0 24px 24px;
 
-				&:nth-child(2) {
+				.entry-header {
 					margin-top: 24px;
 				}
 			}

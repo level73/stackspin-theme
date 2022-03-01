@@ -8713,11 +8713,11 @@ p.limit-width {
 	}
 }
 
-.articles-wrapper article:not(:only-child) > *:not(:first-child) {
+.articles-wrapper article:not(:only-child) > *:not(.post-thumbnail) {
 	margin: 0 24px 24px;
 }
 
-.articles-wrapper article:not(:only-child) > *:not(:first-child):nth-child(2) {
+.articles-wrapper article:not(:only-child) > *:not(.post-thumbnail):nth-child(2) {
 	margin-top: 24px;
 }
 

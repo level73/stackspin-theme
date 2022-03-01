@@ -22,7 +22,14 @@
 
 	<div class="entry-content">
 		<?php
-		stackspin_get_excerpt();
+		if ( is_home() ) {
+			stackspin_get_excerpt();
+		}
+		else {
+			the_content(
+				stackspin_continue_reading_text()
+			);
+		}
 
 		wp_link_pages(
 			array(
