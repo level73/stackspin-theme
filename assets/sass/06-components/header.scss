@@ -133,10 +133,10 @@
 	text-align: center;
 	text-decoration: none;
 	font-size: var(--primary-nav--font-size);
-	line-height: calc(var(--primary-nav--font-size) * 2);
+	line-height: var(--site-button--height);
 
 	@include media(desktop-only) {
-		line-height: calc(var(--primary-nav--font-size) / 1.5);
+		line-height: calc(var(--site-button--height) / 2.5);
 	}
 
 	&:hover {
