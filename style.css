@@ -6807,7 +6807,7 @@ p.limit-width {
 	margin: 0 24px 24px;
 }
 
-.articles-wrapper article:not(:only-child) > *:not(.post-thumbnail):nth-child(2) {
+.articles-wrapper article:not(:only-child) > *:not(.post-thumbnail) .entry-header {
 	margin-top: 24px;
 }
 
