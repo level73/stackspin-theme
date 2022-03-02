@@ -134,6 +134,7 @@
 	text-decoration: none;
 	font-size: var(--primary-nav--font-size);
 	line-height: var(--site-button--height);
+	font-family: var(--site-button--font-family);
 
 	@include media(desktop-only) {
 		line-height: calc(var(--site-button--height) / 2.5);

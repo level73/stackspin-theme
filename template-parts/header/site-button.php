@@ -14,4 +14,4 @@
 
 ?>
 
-<a class="site-button has-text-color has-background" id="get-stackspin--button" href="/why-stackspin">Get Stackspin</a>
+<a class="site-button has-text-color has-background" id="get-stackspin--button" href="/get-stackspin">Get Stackspin</a>

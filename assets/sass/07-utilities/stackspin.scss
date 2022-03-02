@@ -92,8 +92,8 @@ p.limit-width {
 }
 
 .type-animation {
-	animation: cursor 1s 1s linear forwards,
-	animated-text 1.5s steps(12, end) 2s 1 normal both;
+	animation: cursor .3s .3s linear forwards,
+	animated-text 1.5s steps(12, end) .6s 1 normal both;
 	font-size: 64px !important;
 
 	@include media(desktop-only) {
