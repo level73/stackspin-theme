@@ -5,16 +5,19 @@
 	font-family: var(--footer--font-family);
 	font-weight: 500;
 	width: 15%;
+	display: block;
+	margin-right: 0;
+	text-align: right;
 
-	@include media(laptop) {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: calc(2 * var(--global--spacing-horizontal));
-	}
+	// @include media(laptop) {
+	// 	display: grid;
+	// 	grid-template-columns: repeat(2, 1fr);
+	// 	column-gap: calc(2 * var(--global--spacing-horizontal));
+	// }
 
-	@include media(wide) {
-		grid-template-columns: repeat(3, 1fr);
-	}
+	// @include media(wide) {
+	// 	grid-template-columns: repeat(3, 1fr);
+	// }
 
 	@include media(desktop-only) {
 		width: 100%;
@@ -84,6 +87,7 @@
 
 .widget {
 	margin: 0;
+	margin-top: var(--global--spacing-vertical);
 
 	h1,
 	h2,
