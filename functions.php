@@ -367,6 +367,18 @@ function stackspin_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer description', 'stackspin' ),
+			'id'            => 'sidebar-desc',
+			'description'   => esc_html__( 'Add widgets here to appear in your footer description.', 'stackspin' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'stackspin_widgets_init' );
 
@@ -643,11 +655,12 @@ add_action( 'wp_footer', 'stackspin_add_ie_class' );
 
 function custom_search_form( $form ) {
 	$form = '<form role="search" method="get" class="search-form" action="' . home_url( '/' ) . '" >
-	  <div class="custom-form">
-	  <input type="text" value="' . get_search_query() . '" class="search-form__input" placeholder="Search article" />
-	  <input type="submit" class="search-form__submit" value="'. esc_attr__( 'Search' ) .'" />
-	</div>
-	</form>';
+					<div class="custom-form">
+					<input type="text" value="' . get_search_query() . '" class="search-form__input" placeholder="Search article" name="s" />
+					<span class="search-form__icon"></span>
+					<input type="submit" class="search-form__submit" value="'. esc_attr__( 'Search' ) .'" />
+				</div>
+			</form>';
 
 	return $form;
   }

@@ -4104,7 +4104,7 @@ table.wp-calendar-table caption {
 .site-footer .site-footer__main .site-name {
 	font-size: var(--branding--title--font-size);
 	color: var(--global--color-white);
-	width: 55%;
+	width: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -4118,7 +4118,7 @@ table.wp-calendar-table caption {
 
 .site-footer .site-footer__main .site-name .site-name__description {
 	font-family: var(--global--font-secondary);
-	width: 70%;
+	width: 100%;
 	font-weight: 400;
 }
 @media only screen and (max-width: 821px) {
@@ -4127,6 +4127,10 @@ table.wp-calendar-table caption {
 		margin-top: var(--global--spacing-vertical);
 		width: 100%;
 	}
+}
+
+.site-footer .site-footer__main .site-name .site-name__description a {
+	color: var(--global--color-white);
 }
 
 .site-footer .site-footer__main .site-footer__form {
@@ -6746,6 +6750,7 @@ p.limit-width {
 	display: flex;
 	flex-wrap: nowrap;
 	font-size: var(--global--font-size-xs);
+	position: relative;
 }
 
 .custom-form .search-form__input {
@@ -6761,21 +6766,28 @@ p.limit-width {
 	}
 }
 
-.custom-form .search-form__input::before {
-	content: " ";
-	background-image: url("assets/images/search.svg");
-	background-size: 16px 16px;
-	height: 16px;
-	width: 16px;
+.custom-form .search-form__submit {
+	background-color: var(--global--color-gray) !important;
+}
+
+.custom-form .search-form__icon {
 	position: absolute;
-	left: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 1;
 	top: 0;
+	left: 14px;
 	bottom: 0;
 	margin: auto 0;
 }
 
-.custom-form .search-form__submit {
-	background-color: var(--global--color-gray) !important;
+.custom-form .search-form__icon::before {
+	content: " ";
+	background-image: url("assets/images/search.svg");
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
 }
 
 .articles-wrapper {

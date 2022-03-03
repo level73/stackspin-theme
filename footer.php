@@ -22,7 +22,7 @@
 				<?php if ( has_custom_logo() ) : ?>
 					<div class="site-logo"><?php the_custom_logo(); ?></div>
 					<?php if ( get_bloginfo( 'description' ) ) : ?>
-						<p class="site-name__description"><?php bloginfo( 'description' ); ?></p>
+						<?php get_template_part( 'template-parts/footer/footer-desc' ); ?></p>
 					<?php endif; ?>
 				<?php endif; ?>
 			</div><!-- .site-name -->

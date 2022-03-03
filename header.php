@@ -29,4 +29,4 @@
 
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area">
-			<?php echo '<main id="main" class="site-main ' . (is_single() || is_home() ? 'block-margins' : '') . '" role="main">' ?>
+			<?php echo '<main id="main" class="site-main ' . (!is_front_page() ? 'block-margins' : '') . '" role="main">' ?>

@@ -479,6 +479,7 @@ p.limit-width {
 	display: flex;
 	flex-wrap: nowrap;
 	font-size: var(--global--font-size-xs);
+	position: relative;
 
 	.search-form {
 
@@ -491,23 +492,30 @@ p.limit-width {
 			@include media(desktop-only) {
 				width: 100%;
 			}
-	
-			&::before {
-				content: " ";
-				background-image: url("assets/images/search.svg");
-				background-size: 16px 16px;
-				height: 16px;
-				width: 16px;
-				position: absolute;
-				left: 0;
-				top: 0;
-				bottom: 0;
-				margin: auto 0;
-			}
 		}
 
 		&__submit {
 			background-color: var(--global--color-gray) !important;
+		}
+
+		&__icon {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			z-index: 1;
+			top: 0;
+			left: 14px;
+			bottom: 0;
+			margin: auto 0;
+
+			&::before {
+				content: " ";
+				background-image: url("assets/images/search.svg");
+				background-size: 20px 20px;
+				height: 20px;
+				width: 20px;
+				display: inline-block;
+			}
 		}
 	}
 }

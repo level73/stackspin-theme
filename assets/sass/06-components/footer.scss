@@ -39,7 +39,7 @@
 		.site-name {
 			font-size: var(--branding--title--font-size);
 			color: var(--global--color-white);
-			width: 55%;
+			width: 60%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -50,12 +50,16 @@
 			
 			.site-name__description {
 				font-family: var(--global--font-secondary);
-				width: 70%;
+				width: 100%;
 				font-weight: 400;
 
 				@include media(desktop-only) {
 					margin-top: var(--global--spacing-vertical);
 					width: 100%;
+				}
+
+				a {
+					color: var(--global--color-white);
 				}
 			}
 		}
